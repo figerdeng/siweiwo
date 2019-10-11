@@ -37,9 +37,9 @@ header-img: "img/semantic.jpg"
 <script language="javascript">
 $.fn.tagcloud.defaults = {
     size: {start: 1, end: 1, unit: 'em'},
-      color: {start: '#f8e0e6', end: '#ff3333'},
+      color: {start: '#FF0000', end: '#ff3333'},
 	a:link, a:visited {
-	    color:#FF0000;
+	    color:#f8e0e6;
 	    text-decoration:underline;
 	}    
 	
