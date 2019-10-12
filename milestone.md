@@ -74,7 +74,11 @@ header-img: "img/zhihu.jpg"
 **项目案例**
 > * 区块鏈投资指南
 
----
+<style> 
+a:link {color:#ffcc00;}
+a:visited {color:#0000ff;}
+a:hover {color:#ff0000;}
+</style> 
 [凯利公式的实际运用]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式的实际运用.pdf
 [凯利公式计算模版]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式计算模版.xlsx
 
