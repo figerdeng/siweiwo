@@ -21,6 +21,7 @@ header-img: "img/zhihu.jpg"
 > * 周期策略
 
 
+
 **1.2 数字货币投资**
 
 **交易所选择**
@@ -42,7 +43,9 @@ header-img: "img/zhihu.jpg"
 
 **1.4 投资公式**
 > * 凯利公式
-> 
+	* [凯利公式的实际运用参考文档][凯利公式的实际运用]
+	* [凯利公式计算应用模版][凯利公式计算模版]
+	 
 
 # 2.AI人工智能顶级之战系列 #
 **课程大纲**
@@ -69,7 +72,9 @@ header-img: "img/zhihu.jpg"
 **项目案例**
 > * 区块鏈投资指南
 
-
+---
+[凯利公式的实际运用]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式的实际运用.pdf
+[凯利公式计算模版]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式计算模版.xlsx
 
 
 
