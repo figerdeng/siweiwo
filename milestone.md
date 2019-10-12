@@ -21,6 +21,9 @@ header-img: "img/zhihu.jpg"
 
 - 策略
 > * 均值回归策略
+	* [excel三指数均线轮动定投例子][excel三指数均线轮动定投例子]
+	* [如何用excel回测均线定投收益率][如何用excel回测均线定投收益率]
+
 > * 趋势策略
 > * 周期策略
 
@@ -84,7 +87,8 @@ header-img: "img/zhihu.jpg"
  
 [凯利公式的实际运用]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式的实际运用.pdf
 [凯利公式计算模版]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式计算模版.xlsx
-
+[excel三指数均线轮动定投例子]:https://siweiwo.top/resource/inverstmentstrategy/juxian/excel三指数均线轮动定投例子.rar
+[如何用excel回测均线定投收益率]:https://siweiwo.top/resource/inverstmentstrategy/juxian/如何用excel回测均线定投收益率.rar
 [//]: #注释：样式为了解决超链接问题，也可以markdown语法标签使用或则修改clean-blog.css里a:link\a:visited\a:hover对应的标签
 
 
