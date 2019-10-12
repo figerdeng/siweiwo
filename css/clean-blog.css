@@ -28,9 +28,8 @@ h4 {
 a {
   color: #404040;
 }
-a:hover,
-a:link {color:#ffcc00;}
-a:visited {color:#0000ff;}
+a:link {color:#0000ff;}
+a:visited {color:#ffcc00;}
 a:hover {color:#ff0000;}
 a:focus {
   color: #0085a1;
