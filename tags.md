@@ -15,9 +15,9 @@ header-img: "img/semantic.jpg"
 ## 基因列表 ##
 
 
-<div id='tag_cloud'>
+<div id='tag_cloud' class="one">
 {% for tag in site.tags %}
-<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}" class="one">{{ tag[0] }}</a>
+<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}" >{{ tag[0] }}</a>
 {% endfor %}
 </div>
 
@@ -34,9 +34,9 @@ header-img: "img/semantic.jpg"
 </ul>
 
 <style> 
-a.:link {color:#ff0000;}
-a.one:visited {color:#0000ff;}
-a.one:hover {color:#ffcc00;}
+.one a:link {color:#ffcc00;}
+.one a:visited {color:#0000ff;}
+.one a:hover {color:#ff0000;}
 </style> 
 <script src="/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
 <script language="javascript">
@@ -49,9 +49,3 @@ $(function () {
     $('#tag_cloud a').tagcloud();
 });
 </script>
-
-<style> 
-a.one:link {color:#ff0000;}
-a.one:visited {color:#0000ff;}
-a.one:hover {color:#ffcc00;}
-</style> 
