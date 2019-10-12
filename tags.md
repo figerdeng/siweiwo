@@ -33,14 +33,27 @@ header-img: "img/semantic.jpg"
 {% endfor %}
 </ul>
 
-<script src="https://siweiwo.top/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
+<style> 
+a.:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#ffcc00;}
+</style> 
+<script src="/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
 <script language="javascript">
 $.fn.tagcloud.defaults = {
- size: {start: 14, end: 18, unit: 'pt'},
- color: {start: '#cde', end: '#f52'}
+    size: {start: 1, end: 1, unit: 'em'},
+    color: {start: '#f8e0e6', end: '#ff3333'}
 };
 
 $(function () {
     $('#tag_cloud a').tagcloud();
 });
 </script>
+
+<style> 
+a:link {color:#ff0000;}
+a:visited {color:#0000ff;}
+a:hover {color:#ffcc00;}
+
+	/* divcss5对象内 a超链接设置样式 */ 
+</style> 
