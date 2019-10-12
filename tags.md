@@ -33,11 +33,7 @@ header-img: "img/semantic.jpg"
 {% endfor %}
 </ul>
 
-<style> 
-.one a:link {color:#ffcc00;}
-.one a:visited {color:#0000ff;}
-.one a:hover {color:#ff0000;}
-</style> 
+
 <script src="/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
 <script language="javascript">
 $.fn.tagcloud.defaults = {

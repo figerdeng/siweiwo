@@ -78,10 +78,6 @@ header-img: "img/zhihu.jpg"
 [凯利公式的实际运用]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式的实际运用.pdf
 [凯利公式计算模版]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式计算模版.xlsx
 
-[//]: #注释：样式为了解决超链接问题，也可以markdown语法：<font color=Blue>我是蓝色</font>
-<style> 
-a:link {color:#ffcc00;}
-a:visited {color:#0000ff;}
-a:hover {color:#ff0000;}
-</style>
+[//]: #注释：样式为了解决超链接问题，也可以markdown语法 font标签使用或则修改clean-blog.css里a:link\a:visited\a:hover对应的标签：
+
 
