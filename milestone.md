@@ -10,12 +10,16 @@ header-img: "img/zhihu.jpg"
 
 **1.1 股票投资**
 
-**数据加工** 
+
+
+- 数据加工 
 > * 数据获取
 > * 数据清洗
 > * 数据分析
 
-**策略**
+
+
+- 策略
 > * 均值回归策略
 > * 趋势策略
 > * 周期策略
@@ -24,32 +28,35 @@ header-img: "img/zhihu.jpg"
 
 **1.2 数字货币投资**
 
-**交易所选择**
-> *  [币安](http://)
+- 交易所选择
+>*  [币安](http://)
 > * [火币](http://)
 > * [Aex](http://www.aex88.com "Aex")
 
-**主流币投资策略**
+
+
+- 主流币投资策略
 > *  [币安](http://)
 
-**山寨币投资策略**
-
+- 山寨币投资策略
 > * BTS
 > * BNB 
 
 
-**1.3 投资心理学**
+**1.3  投资心理学**
 > * 铆钉心理
 > * 羊群效应
 
-**1.4 投资公式**
+**1.4  投资公式**
 > * 凯利公式
 	* [凯利公式的实际运用参考文档][凯利公式的实际运用]
 	* [凯利公式计算应用模版][凯利公式计算模版]
 	 
 **1.5 投资经典书籍**
 > * 投资心理学(作者)
-# 2.AI人工智能顶级之战系列 #
+ 
+---
+# 2.  AI人工智能顶级之战系列 #
 **课程大纲**
 > *  高等数学
 > * Python高级应用
@@ -62,7 +69,7 @@ header-img: "img/zhihu.jpg"
 > * AI洗稿
 
 ----
-# 3.区块鏈顶级之战系列 #
+# 3.  区块鏈顶级之战系列 #
 **课程大纲**
 > * 高等数学
 - Python高级应用
@@ -78,6 +85,7 @@ header-img: "img/zhihu.jpg"
 [凯利公式的实际运用]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式的实际运用.pdf
 [凯利公式计算模版]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式计算模版.xlsx
 
-[//]: #注释：样式为了解决超链接问题，也可以markdown语法 font标签使用或则修改clean-blog.css里a:link\a:visited\a:hover对应的标签：
+[//]: #注释：样式为了解决超链接问题，也可以markdown语法标签使用或则修改clean-blog.css里a:link\a:visited\a:hover对应的标签
+
 
 
