@@ -17,7 +17,7 @@ header-img: "img/semantic.jpg"
 
 <div id='tag_cloud'>
 {% for tag in site.tags %}
-<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}" class="one">{{ tag[0] }}</a>
 {% endfor %}
 </div>
 
@@ -51,9 +51,7 @@ $(function () {
 </script>
 
 <style> 
-a:link {color:#ff0000;}
-a:visited {color:#0000ff;}
-a:hover {color:#ffcc00;}
-
-	/* divcss5对象内 a超链接设置样式 */ 
+a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#ffcc00;}
 </style> 
