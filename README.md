@@ -16,12 +16,19 @@
 * 代表作页面：milestone.md
 * 文章模板：blog.io/_posts/2015-03-02-how-to-write.md 
 
+## 修改
+* 文章放在_posts命名，按照里面的案例命名，并且最好英文
+* 目录resource最好也是英文
+* 如果要全文检索关键词，可以直接editplus通过目录检索.md文件的文本进行检索
+
+
 ## 
+
 
 ## 模板作者
 
-陈素封，博客：独立写生：[cnfeat.com](cnfeat.com)
+figerdeng，博客：思维窝：[siweiwo.top](siweiwo.top)
 
-联系方式：cnfeat@gmail.com
+联系方式：dfg1478@gmail.com
 
 
