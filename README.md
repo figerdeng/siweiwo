@@ -40,6 +40,12 @@
 			*	针灸zhenjiu
 			*	耳灸erjiu
 			*	穴位xuewei
+	* 技术tech：tech\computer\software\syssoftware\sysmonitor\cpu
+		* computer
+			* software
+				* 系统软件syssoftware
+					* 系统监控sysmonitor
+						* cpu
 
 			 	
 
