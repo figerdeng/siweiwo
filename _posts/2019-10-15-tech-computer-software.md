@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 计算机软件
+title: 计算机软件大纲
 date: 2019-10-15
 categories: blog
 tags: [投资,大纲]
