@@ -21,6 +21,7 @@ description: 提供小号注册。
 - 任务平台
 	* [趣闲赚][趣闲赚]
 	* [蚂蚁帮扶][蚂蚁帮扶]
+	* 众人帮
 	* 全名推
 	* 趣扶帮（新的待上线，联合创始人：qq1456661451）	
 - 区块鏈自媒体
@@ -28,6 +29,8 @@ description: 提供小号注册。
 	- 路财
 	- 力场
 	- 陀螺世界	
+- 羊毛
+	- [PI 空投教程](https://note.youdao.com/ynoteshare1/mobile.html?id=da22ce6f4b5a97a6ae3955cbeaa8edb0&type=note&from=groupmessage)
 
 
 [趣闲赚]:http://fenx.yyzja.cn/507137
