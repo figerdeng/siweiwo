@@ -15,6 +15,33 @@
 * 个人介绍页面：about.md
 * 代表作页面：milestone.md
 * 文章模板：blog.io/_posts/2015-03-02-how-to-write.md 
+## 文章命名规则:路径名+文件名(拼音)【没有注明的用英文来命名】
+* resource
+	* 投资investment
+		* 股票stock
+		* 债券bond
+		* 数字货币digitalcash
+		* 投资心理touzixinli
+				* 交易前必看jiaoyiqianbikan
+		* 其他other
+	*	健康health
+		*	心里健康xinlijiankang
+			*	宗教zongjiao
+				*	道家daojiao
+					*	道德经daodejing
+					*	常清静经changqingjingjing
+					*	阴符经yinfujing
+				*	佛家fojia
+					*	心经xinjing
+					*	金刚经jingangjing
+					*	四种清净明诲sizhongqingjingminghui
+		*	保健baojian
+			*	艾灸aijiu
+			*	针灸zhenjiu
+			*	耳灸erjiu
+			*	穴位xuewei
+
+			 	
 
 ## 修改
 * 文章放在_posts命名，按照里面的案例命名，并且最好英文
