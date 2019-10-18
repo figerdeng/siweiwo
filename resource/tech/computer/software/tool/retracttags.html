@@ -1,5 +1,6 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312"><title>JS×Ô¶¯»ñÈ¡TAGS¹Ø¼ü´Ê by okajax.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"><title>JSè‡ªåŠ¨èŽ·å–TAGSå…³é”®è¯</title>
 <style> 
 body{
         background:#E2E9ED;
@@ -39,51 +40,51 @@ body{
         }
 </style></head><body>
 <div id="input">
-<input name="intfx" value="" id="intfx" type="text">ÇëÊäÈëãÐÖµ
-<input name="indesc" value="3" id="indesc" type="text">ÇëÊäÈë±êÒýÉî¶È
+<input name="intfx" value="" id="intfx" type="text">è¯·è¾“å…¥é˜€å€¼
+<input name="indesc" value="15" id="indesc" type="text">è¯·è¾“å…¥æ ‡å¼•æ·±åº¦
 <br>
-<span class="txt">ÊäÈëºóÇëµã»÷ÈÎºÎÒ»Æª±êÌâ»ñÈ¡½á¹û</span>
+<span class="txt">è¾“å…¥åŽè¯·ç‚¹å‡»ä»»ä½•ä¸€ç¯‡æ ‡é¢˜èŽ·å–ç»“æžœ</span>
 </div>
 <div id="drop" style="display: none;"></div>
-ÄÚÈÝ£º<textarea name="keywords" cols="100" rows="10" id="keywords">ÊäÈë¶ÔÓ¦µÃÎÄÕÂ£¬È»ºóÌáÈ¡¶ÔÓ¦µÄ¹Ø¼ü´Ê......</textarea>
-<input type="button" onclick="lastIndexDemo();"  value="ÌáÈ¡¹Ø¼ü´Ê"/><br />
-TAGS£º<input name="tags" type="text" id="tags" style="width:300px;" /><br />
+å†…å®¹ï¼š<textarea name="keywords" cols="100" rows="10" id="keywords">è¾“å…¥å¯¹åº”å¾—æ–‡ç« ï¼Œç„¶åŽæå–å¯¹åº”çš„å…³é”®è¯......</textarea>
+<input type="button" onclick="lastIndexDemo();"  value="æå–å…³é”®è¯"/><br />
+TAGSï¼š<input name="tags" type="text" id="tags" style="width:300px;" /><br />
 <br />
 <div id="result">
-ÄúËùÑ¡ÔñµÄÌâÄ¿ÊÇ<br><span id="outtit">ÃÀ¹ú¸÷½çÈËÊ¿Ç¿ÁÒÅúÆÀÃÀÏÞÖÆÖÐ¹ú·ÄÖ¯Æ·½ø¿Ú</span><br>
-´ËÎÄÕÂ°üº¬¹Ø¼ü´Ê<br><span id="outkey">½ø¿Ú,·ÄÖ¯Æ·,ÖÐ¹ú,ÏÞÖÆ,ÅúÆÀ</span><br>
-ÒÔÉÏ¹Ø¼ü´Ê¶ÔÓ¦È¨ÖØÎª<br><span id="outtfx">5.991,2.996,0.693,2.996,2.996</span><br>
-´ËÎÄÕÂ°üº¬Í£ÓÃ´Ê<br><span id="outstop">Ç¿ÁÒ,ÈËÊ¿</span><br>
-ÄúµÄ±êÒýãÐÖµÎª<br><span id="outval">2</span><br>
-¹Ø¼ü´ÊÖÐ·ûºÏ²¢¿É×÷Îª±êÒý´ÊµÄÓÐ<br><span id="outword">½ø¿Ú,·ÄÖ¯Æ·,ÏÞÖÆ,ÅúÆÀ</span><br>
-ÄúµÄ±êÒýÉî¶ÈÎª<br><span id="outdeep">3</span><br>
-×îºóÈ·¶¨µÄ±êÒý´ÊÎª<br><span id="outkeyword">½ø¿Ú,·ÄÖ¯Æ·,ÏÞÖÆ</span><br>
+æ‚¨æ‰€é€‰æ‹©çš„é¢˜ç›®æ˜¯<br><span id="outtit">ç¾Žå›½å„ç•Œäººå£«å¼ºçƒˆæ‰¹è¯„ç¾Žé™åˆ¶ä¸­å›½çººç»‡å“è¿›å£</span><br>
+æ­¤æ–‡ç« åŒ…å«å…³é”®è¯<br><span id="outkey">è¿›å£,çººç»‡å“,ä¸­å›½,é™åˆ¶,æ‰¹è¯„</span><br>
+ä»¥ä¸Šå…³é”®è¯å¯¹åº”æƒé‡ä¸º<br><span id="outtfx">5.991,2.996,0.693,2.996,2.996</span><br>
+æ­¤æ–‡ç« åŒ…å«åœç”¨è¯<br><span id="outstop">å¼ºçƒˆ,äººå£«</span><br>
+æ‚¨çš„æ ‡å¼•é˜ˆå€¼ä¸º<br><span id="outval">2</span><br>
+å…³é”®è¯ä¸­ç¬¦åˆå¹¶å¯ä½œä¸ºæ ‡å¼•è¯çš„æœ‰<br><span id="outword">è¿›å£,çººç»‡å“,é™åˆ¶,æ‰¹è¯„</span><br>
+æ‚¨çš„æ ‡å¼•æ·±åº¦ä¸º<br><span id="outdeep">3</span><br>
+æœ€åŽç¡®å®šçš„æ ‡å¼•è¯ä¸º<br><span id="outkeyword">è¿›å£,çººç»‡å“,é™åˆ¶</span><br>
 </div>
 <script> 
-var keylis = new Array("Ã³Ò×","ÖÆ²Ã","¸ÄÔì","ÖÐ¹ú","¾­¼Ã","ÖÐ¹ú¾­¼Ã","ÃÀ¹ú","ÃÀ¹ú¾­¼Ã","Õû¶Ù","ÒøÐÐÒµ","ÒøÐÐ","ÃÀÖÐ","Äæ²î","Ã³Ò×Äæ²î","½á¹¹ÐÔ","×ªÒÆÐÔ","½ø³ö¿Ú","ÉÌ»á","ÇãÏú","Ë°ÂÊ","½»Éæ","¶«±±","ÑÇÖÞ","ÑÇÖÞ¾­¼Ã","ÂÛÌ³","Ôö³¤","Ê§ÒµÂÊ","Ê§Òµ","»ØÂä","ÅúÆÀ","ÏÞÖÆ","·ÄÖ¯Æ·","½ø¿Ú","¼ÓÄÃ´ó","Í³¼Æ","ÒÆÃñ","ÊÕÈë","²îÒì","ÖÐÑëÒøÐÐ","ÖÐÑë","ÉÌÒµÒøÐÐ","Õþ²ß","´ëÊ©","¾­¼Ã·¢Õ¹","·¢Õ¹","ÈÕ±¾","ÈÕ±¾¾­¼Ã","¸´ËÕ","¾ö¶¨","¶ÍÖý","Ìú¹Ü","¹Ü¼þ","Õ÷ÊÕ","·´ÇãÏú","Â¢¶Ï","ÇãÏúË°","ÁªºÏ¹ú","ÁªºÏ","ÊµÊ©","ÒÁÀ­¿Ë","Ê¯ÓÍ","Ê³Æ·","¼Æ»®","·¢Õ¹ÖÐ¹ú¼Ò","·¢´ï¹ú¼Ò","¹ú¼Ò","¼Òµç","µçÐÅ","²úÒµ","µç×Ó","ÐÅÏ¢","²úÏú","¶íÂÞË¹","¼ì²ì¹Ù","¼ì²ì","Ê×¸»","·¸×ï","µ÷²é","½áÊø","Å·ÃË","Õù¶Ë","Í¶×Ê","ÊÜ´ì","¸Ä¸ï","Î¯Ô±»á","Î¯Ô±","ÊµÐÐ","ÁÙÊ±","¼Û¸ñ","¸ÉÔ¤","Ê©ÐÐ","ÃÀÁª´¢","¾¯¸æ","Í¨»õÅòÕÍ","ÅòÕÍ","ÏÂ»¬","Ë¥ÍË","¼¾¶È","ÑïÑÔ","ÑÝÊ¾¼òµ¥","ºóÌ¨","Çø¿éÁ´","Êý×Ö»õ±Ò","BTC","ETH","EOS","BNB","HT","Ö÷Á÷±Ò","É½Õ¯±Ò","Í¶×Ê","¶à","µø","ÕÇ","Õðµ´","ÉÏÕÇ","ÏÂµø","ºáÅÌ","ÃÀ¹ú","ÖÐ¹ú","Î÷·½","¶«·½","XRP","Èð²¨±Ò","³ïÂë","ÐÂÐË²úÒµ","GDP","ÈË¹¤ÖÇÄÜ","´óÊý¾Ý","Ó¦ÓÃ","ÉÌÒµ»¯","ÌôÕ½","º£Á¿Êý¾Ý","¼ÛÖµ","¼ÛÖµÍ¶×Ê","Ç÷ÊÆ","¼ÆËã","ÔÆ¼ÆËã","¼Ü¹¹","ÆóÒµ","ÔÆ","ÔÆ»·¾³","»·¾³","ËãÁ¦","º£Á¿Êý¾Ý","°²È«","ÉÌÒµ¼ÛÖµ","¿Æ¼¼","Ê±´ú","´ú±í","ºá¾Ã±Øµø","Ö§³Å","Òµ¼¨","Òµ¼¨Ö§³Å","Æ½Ì¨±Ò","±Ò°²","»ð±Ò","¾¨½»Ëù","È¥ÖÐÐÄ»¯","ÖÜÏß","¸½½üÅÇ»²","µ×ÅÌ","³­µ×","ÐÐÇé","¶ÀÁ¢ÐÐÇé","¾ùÏß","¾ùÏßÖ¸±ê","¿´¿Õ","¿´¶à","ÖÜÏß","ÔÂÏß","ÈÕÏß");
+var keylis = new Array("è´¸æ˜“","åˆ¶è£","æ”¹é€ ","ä¸­å›½","ç»æµŽ","ä¸­å›½ç»æµŽ","ç¾Žå›½","ç¾Žå›½ç»æµŽ","æ•´é¡¿","é“¶è¡Œä¸š","é“¶è¡Œ","ç¾Žä¸­","é€†å·®","è´¸æ˜“é€†å·®","ç»“æž„æ€§","è½¬ç§»æ€§","è¿›å‡ºå£","å•†ä¼š","å€¾é”€","ç¨ŽçŽ‡","äº¤æ¶‰","ä¸œåŒ—","äºšæ´²","äºšæ´²ç»æµŽ","è®ºå›","å¢žé•¿","å¤±ä¸šçŽ‡","å¤±ä¸š","å›žè½","æ‰¹è¯„","é™åˆ¶","çººç»‡å“","è¿›å£","åŠ æ‹¿å¤§","ç»Ÿè®¡","ç§»æ°‘","æ”¶å…¥","å·®å¼‚","ä¸­å¤®é“¶è¡Œ","ä¸­å¤®","å•†ä¸šé“¶è¡Œ","æ”¿ç­–","æŽªæ–½","ç»æµŽå‘å±•","å‘å±•","æ—¥æœ¬","æ—¥æœ¬ç»æµŽ","å¤è‹","å†³å®š","é”»é“¸","é“ç®¡","ç®¡ä»¶","å¾æ”¶","åå€¾é”€","åž„æ–­","å€¾é”€ç¨Ž","è”åˆå›½","è”åˆ","å®žæ–½","ä¼Šæ‹‰å…‹","çŸ³æ²¹","é£Ÿå“","è®¡åˆ’","å‘å±•ä¸­å›½å®¶","å‘è¾¾å›½å®¶","å›½å®¶","å®¶ç”µ","ç”µä¿¡","äº§ä¸š","ç”µå­","ä¿¡æ¯","äº§é”€","ä¿„ç½—æ–¯","æ£€å¯Ÿå®˜","æ£€å¯Ÿ","é¦–å¯Œ","çŠ¯ç½ª","è°ƒæŸ¥","ç»“æŸ","æ¬§ç›Ÿ","äº‰ç«¯","æŠ•èµ„","å—æŒ«","æ”¹é©","å§”å‘˜ä¼š","å§”å‘˜","å®žè¡Œ","ä¸´æ—¶","ä»·æ ¼","å¹²é¢„","æ–½è¡Œ","ç¾Žè”å‚¨","è­¦å‘Š","é€šè´§è†¨èƒ€","è†¨èƒ€","ä¸‹æ»‘","è¡°é€€","å­£åº¦","æ‰¬è¨€","æ¼”ç¤ºç®€å•","åŽå°","åŒºå—é“¾","æ•°å­—è´§å¸","BTC","ETH","EOS","BNB","HT","ä¸»æµå¸","å±±å¯¨å¸","æŠ•èµ„","å¤š","è·Œ","æ¶¨","éœ‡è¡","ä¸Šæ¶¨","ä¸‹è·Œ","æ¨ªç›˜","ç¾Žå›½","ä¸­å›½","è¥¿æ–¹","ä¸œæ–¹","XRP","ç‘žæ³¢å¸","ç­¹ç ","æ–°å…´äº§ä¸š","GDP","äººå·¥æ™ºèƒ½","å¤§æ•°æ®","åº”ç”¨","å•†ä¸šåŒ–","æŒ‘æˆ˜","æµ·é‡æ•°æ®","ä»·å€¼","ä»·å€¼æŠ•èµ„","è¶‹åŠ¿","è®¡ç®—","äº‘è®¡ç®—","æž¶æž„","ä¼ä¸š","äº‘","äº‘çŽ¯å¢ƒ","çŽ¯å¢ƒ","ç®—åŠ›","æµ·é‡æ•°æ®","å®‰å…¨","å•†ä¸šä»·å€¼","ç§‘æŠ€","æ—¶ä»£","ä»£è¡¨","æ¨ªä¹…å¿…è·Œ","æ”¯æ’‘","ä¸šç»©","ä¸šç»©æ”¯æ’‘","å¹³å°å¸","å¸å®‰","ç«å¸","é²¸äº¤æ‰€","åŽ»ä¸­å¿ƒåŒ–","å‘¨çº¿","é™„è¿‘å¾˜å¾Š","åº•ç›˜","æŠ„åº•","è¡Œæƒ…","ç‹¬ç«‹è¡Œæƒ…","å‡çº¿","å‡çº¿æŒ‡æ ‡","çœ‹ç©º","çœ‹å¤š","å‘¨çº¿","æœˆçº¿","æ—¥çº¿");
 var keydrop="";
 function delHtmlTag(str) 
 { 
-   return str.replace(/<[^>]+>/g,"");//È¥µôËùÓÐµÄhtml±ê¼Ç 
+   return str.replace(/<[^>]+>/g,"");//åŽ»æŽ‰æ‰€æœ‰çš„htmlæ ‡è®° 
 }
 function lastIndexDemo(a)
 {
-   var str = delHtmlTag(document.getElementById("keywords").value);//»ñÈ¡×Ö·û´®
-  var keys = new Array;//´Ê±í´æ´¢ÐòÁÐ
+   var str = delHtmlTag(document.getElementById("keywords").value);//èŽ·å–å­—ç¬¦ä¸²
+  var keys = new Array;//è¯è¡¨å­˜å‚¨åºåˆ—
   var titles = new Array;
-  var key = new Array;//¹Ø¼ü´Ê¶ÔÏó´æ´¢ÐòÁÐ
-  var gotkey = new Array();//¹Ø¼ü´Ê¶ÔÏó
-  var name = new Array();//¹Ø¼ü´Êname
-  var address = new Array();//¹Ø¼ü´ÊÔÚ´Ê±íÖÐÎ»ÖÃ
-  var times = new Array();//¹Ø¼ü´ÊÔÚ±¾ÆªÄ¿ÖÐµÄ³öÏÖ´ÎÊý
-  var tfx = new Array();//¹Ø¼ü´ÊtfxÖµ
-  var stopkey = new Array();//¹Ø¼ü´ÊÊÇ·ñÎªÍ£ÓÃ´Ê
-  var desc = new Array();//¹Ø¼ü´ÊÅÅÃû
-  var strkey;// ÉùÃ÷±äÁ¿Ô¤´æ¹Ø¼ü×Ö
-  var strl = str.length;//»ñÈ¡×Ö·û´®³¤¶È
-  getkeywords(keys,titles);//³õÊ¼»¯¹Ø¼ü´Ê±íºÍ±êÌâÐòÁÐ
-  getkey(str,strkey,strl,keys,key,name,address,stopkey);//»ñÈ¡¹Ø¼ü´Ê£¬´Ê±íÎ»ÖÃ£¬ÊÇ·ñÍ£ÓÃ
-  timesn(times,address);//»ñÈ¡n£¨³öÏÖ¶àÉÙ´Î£©
+  var key = new Array;//å…³é”®è¯å¯¹è±¡å­˜å‚¨åºåˆ—
+  var gotkey = new Array();//å…³é”®è¯å¯¹è±¡
+  var name = new Array();//å…³é”®è¯name
+  var address = new Array();//å…³é”®è¯åœ¨è¯è¡¨ä¸­ä½ç½®
+  var times = new Array();//å…³é”®è¯åœ¨æœ¬ç¯‡ç›®ä¸­çš„å‡ºçŽ°æ¬¡æ•°
+  var tfx = new Array();//å…³é”®è¯tfxå€¼
+  var stopkey = new Array();//å…³é”®è¯æ˜¯å¦ä¸ºåœç”¨è¯
+  var desc = new Array();//å…³é”®è¯æŽ’å
+  var strkey;// å£°æ˜Žå˜é‡é¢„å­˜å…³é”®å­—
+  var strl = str.length;//èŽ·å–å­—ç¬¦ä¸²é•¿åº¦
+  getkeywords(keys,titles);//åˆå§‹åŒ–å…³é”®è¯è¡¨å’Œæ ‡é¢˜åºåˆ—
+  getkey(str,strkey,strl,keys,key,name,address,stopkey);//èŽ·å–å…³é”®è¯ï¼Œè¯è¡¨ä½ç½®ï¼Œæ˜¯å¦åœç”¨
+  timesn(times,address);//èŽ·å–nï¼ˆå‡ºçŽ°å¤šå°‘æ¬¡ï¼‰
   gettfx(times,tfx);
   toobject(key,address,times,tfx,stopkey,name);
   outresult(key,address,times,tfx,stopkey,name,str);
@@ -142,17 +143,17 @@ function toobject(key,address,times,tfx,stopkey,name){
         
 }
 function getkey(str,strkey,strl,keys,key,name,address,stopkey){
-        for(k=strl;k>0;k--){//¿ØÖÆÑ­»·´ÎÊý
+        for(k=strl;k>0;k--){//æŽ§åˆ¶å¾ªçŽ¯æ¬¡æ•°
         
                    label:
-                   for(j=6;j>0;j--)//Í¨¹ý×î´ó¹Ø¼ü×Ö³¤¶È¿ØÖÆÑ­»·
+                   for(j=6;j>0;j--)//é€šè¿‡æœ€å¤§å…³é”®å­—é•¿åº¦æŽ§åˆ¶å¾ªçŽ¯
                                 {
                                         var strkey = str.substr(k-j, j);
                                         
-                                        //È·¶¨Ô¤¼ìË÷×Ö·û´® strl-j ÊÇÎ»ÖÃ jÊÇ³¤¶È
-                                        for(i=0;i<keys.length;i++)//Í¨¹ý¹Ø¼ü×Ö×Ö¿âµÄÊýÁ¿È·¶¨Ñ­»·´ÎÊý
+                                        //ç¡®å®šé¢„æ£€ç´¢å­—ç¬¦ä¸² strl-j æ˜¯ä½ç½® jæ˜¯é•¿åº¦
+                                        for(i=0;i<keys.length;i++)//é€šè¿‡å…³é”®å­—å­—åº“çš„æ•°é‡ç¡®å®šå¾ªçŽ¯æ¬¡æ•°
                                         {
-                                                if(keys[i]==strkey){//Èç¹ûÏÖÓÐ¹Ø¼ü×ÖÓë×Ö¿âÆ¥Åä
+                                                if(keys[i]==strkey){//å¦‚æžœçŽ°æœ‰å…³é”®å­—ä¸Žå­—åº“åŒ¹é…
                                                         name.push(strkey);
                                                         address.push(i);
                                                         if(i>keylis.length){
