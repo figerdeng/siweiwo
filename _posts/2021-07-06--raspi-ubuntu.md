@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: 树莓派打造量化平台
 date: 2021-07-06
 categories: blog
 tags: [ubuntu,树莓派,数字货币,量化,股票]
