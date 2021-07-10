@@ -275,6 +275,15 @@ description: 树莓派打造量化平台
           c.NotebookApp.open_browser = False                  
           c.NotebookApp.port = 9999                     
           c.NotebookApp.notebook_dir = '/media/usb3hdd1_120g/dev/'   
+
+
+      Ubuntu断网解决办法
+      sudo vim /etc/ppp/options
+      改lcp-echo-interval 300
+      icp-echo-failure 40
+
+
+      写一段代码，读写硬盘15分钟间隔，然后见监控一下
 #### **6.3 日志输出等级**
       1、DEBUG
       面向功能开发人员，一般在功能开发阶段使用，用来给开发人员检查功能是否正常的。
