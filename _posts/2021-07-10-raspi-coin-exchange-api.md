@@ -27,5 +27,5 @@ description: 币圈交易所API
       [www.binancezh.sh][url1]
       [api3.binance.com][url2]
 
-[url1]:https://www.binancezh.sh/api/v3/klines?symbol=1INCHUSDT&startTime=1625500800000&endTime=1625846399000&limit=1000&interval=1d
-[url2]:https://api3.binance.com/api/v3/klines?symbol=1INCHUSDT&startTime=1625500800000&endTime=1625846399000&limit=1000&interval=1d
+[url1]: https://www.binancezh.sh/api/v3/klines?symbol=1INCHUSDT&startTime=1625500800000&endTime=1625846399000&limit=1000&interval=1d
+[url2]: https://api3.binance.com/api/v3/klines?symbol=1INCHUSDT&startTime=1625500800000&endTime=1625846399000&limit=1000&interval=1d
