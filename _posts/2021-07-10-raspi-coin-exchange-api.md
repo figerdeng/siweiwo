@@ -20,6 +20,7 @@ description: 币圈交易所API
       https://api3.binance.com/api/v3/ping
     2.国内网址
       https://www.binancezh.sh/api/v3/ping
+      https://api.binancezh.co/api/v3/ping
     3.API文档
       https://binance-docs.github.io/apidocs/spot/cn/#15ec3c9f4c
     4.K线策略地址
