@@ -373,7 +373,7 @@ description: 树莓派打造量化平台
     find . -name ".git" | xargs rm -Rf
     //初始化仓库
     git init
-#### **ubuntu压缩和加压 ####**
+#### **ubuntu压缩和解压 ####**
     1.压缩当前目前下的【全能行证券交易终端】目录下的所有文件---》全能行证券交易终端.tar.gz
       tar -zcvf 全能行证券交易终端.tar.gz 全能行证券交易终端
     2.解压
@@ -389,7 +389,16 @@ description: 树莓派打造量化平台
           tar解密解压：
               dd if=filename.tar.gz | openssl des3 -d -k password | tar xzvf - -C解压路径
           password为密码自行设定，出现如下错误，一般是需要通过-C来指定解压路径：
+#### **ubuntu7z的压缩和解压 ####**
+    1.7z的解压缩
+    2.ubuntu下安装7z
+    3.7z压缩和解压
+      压缩：
+      7z a -t7z product/usb3hdd1_3t/computerbak/surface_import/2/zhanghu.7z -pxxxx product/usb3hdd1_3t/computerbak/surface_import/2/zhanghu.txt
+      解压：
+      7z x product/usb3hdd1_3t/computerbak/surface_import/2/zhanghu.7z -pxxxx
 
+      其中-p后面的xxxx即为解压缩密码
 #### **文件对应关系 ####**
 scp -r /media/usb3hdd1_120g/dev/ root@192.168.10.191:/product/usb3hdd1_3t/dev/
 scp -r /media/usb3hdd1_120g/computerbak/ root@192.168.10.191:/product/usb3hdd1_3t/
