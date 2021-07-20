@@ -397,8 +397,13 @@ description: 树莓派打造量化平台
       7z a -t7z product/usb3hdd1_3t/computerbak/surface_import/2/zhanghu.7z -pxxxx product/usb3hdd1_3t/computerbak/surface_import/2/zhanghu.txt
       解压：
       7z x product/usb3hdd1_3t/computerbak/surface_import/2/zhanghu.7z -pxxxx
-
       其中-p后面的xxxx即为解压缩密码
+    4.7z命令可以看到对一个的参数说明
+    5.建议采用定位到目录以后在操作
+      cd /product/usb3hdd1_3t/computerbak/surface_import/2
+      7z a -t7z zhanghu.7z -pTestxxxxx zhanghu.txt
+      7z x zhanghu.7z -pTestxxxxx
+
 #### **文件对应关系 ####**
 scp -r /media/usb3hdd1_120g/dev/ root@192.168.10.191:/product/usb3hdd1_3t/dev/
 scp -r /media/usb3hdd1_120g/computerbak/ root@192.168.10.191:/product/usb3hdd1_3t/
