@@ -30,5 +30,18 @@ description: 币圈交易所API
       [www.binancezh.sh][url1]
       [api3.binance.com][url2]
 
+## **2. aex**
+    交易所API URL
+    1.常用网址
+      https://aex88.com
+      https://aex.cash
+
+## **3. 抹茶**
+    交易所API URL
+    1.常用网址
+      https://www.mexc.com
+      https://www.mexc.la
+
+
 [url1]: https://www.binancezh.sh/api/v3/klines?symbol=1INCHUSDT&startTime=1625500800000&endTime=1625846399000&limit=1000&interval=1d
 [url2]: https://api3.binance.com/api/v3/klines?symbol=1INCHUSDT&startTime=1625500800000&endTime=1625846399000&limit=1000&interval=1d
