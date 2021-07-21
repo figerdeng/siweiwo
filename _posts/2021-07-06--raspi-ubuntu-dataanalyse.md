@@ -310,6 +310,18 @@ description: 树莓派打造量化平台
 #### **6.4 日志输出等级**
     获取外网ip：curl www.icanhazip.com
 
+#### **6.5 VSCode 快捷键 ####**
+      vscode代码编辑器折叠所有区域的代码快捷键
+      查看了使用说明，快捷键如下：
+      1. 折叠所有区域代码的快捷键：ctrl+k, ctrl+0;
+                        先按下ctrl和K，再按下ctrl和0; (注意这个是零，不是欧)
+      2. 展开所有折叠区域代码的快捷键：ctrl +k, ctrl+J;
+                        先按下ctrl和K，再按下ctrl和J 
+      3. 自动格式化代码的快捷键：ctrl+k, ctrl+f;
+                        先按下ctrl和K，再按下ctrl和f;
+
+
+
 #### **ubuntu-002开启jupyter服务**
       1.su ubuntu
       2.screen -S jupyterscreen
@@ -454,3 +466,4 @@ scp -r /media/usb3hdd1_120g/computerbak/ root@192.168.10.191:/product/usb3hdd1_3
         product目录为固态硬盘目录，主要运行策略程序，因为代码大部分可以服用，故ubuntu_002的代码复制了一套到ubuntu_001
         /product/usb3hdd1_3t/dev/digitalcurrencyanalyse为20210609的一个版本，里面会有有些案例代码experiment
         对应的压缩代码在ubuntu_001的/sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/experiment是一样的
+
