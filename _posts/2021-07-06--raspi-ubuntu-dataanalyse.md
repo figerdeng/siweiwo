@@ -320,14 +320,132 @@ description: 树莓派打造量化平台
       3. 自动格式化代码的快捷键：ctrl+k, ctrl+f;
                         先按下ctrl和K，再按下ctrl和f;
 
+#### **6.6 ubunutu 防火墙开启和端口开放 ####**
+      解决机器无端重启，宝塔端口被墙以后无法正常登录,还有mysql对应的端口进行重新开放，可以通过宝塔面板进行处理。（宝塔和mysql只要机器重启，则端口映射需要重新处理一下）      
+      查看防火墙状态：sudo ufw status
+      重启ufw防火墙：sudo ufw reload 
+      开放端口：sudo ufw allow 1111/tcp或sudo ufw allow 1111/udp
+      关闭端口：sudo ufw delete allow 1111/tcp
 
+
+
+#### **6.7 ubunutu 启动命令 ####**
+  重启：sudo reboot
+  关机：shutdown -h now或halt或poweroff
+
+#### **6.8 flask问题 ####**
+  端口被占用，查询7891端口的进程，然后，杀掉
+  lsof -i:7891
+  kill -9 进程id
+
+  或
+  netstat -tunlp
+  查看到对应的进程杀掉就可以了
+#### **6.9 mysql密码修改 ####**
+    1.登入
+    mysql -u root -p
+    输入root密码
+    2.切换库
+    use mysql
+    切换库
+    3.更新密码 
+    UPDATE user SET password=PASSWORD('Test1xxxx') WHERE user='root';
+    FLUSH PRIVILEGES;
+    SET PASSWORD FOR root=PASSWORD('Test1xxxxx');
+    update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
+    4.重启mysql
 
 #### **ubuntu-002开启jupyter服务**
       1.su ubuntu
       2.screen -S jupyterscreen
       3.jupyter notebook
       4.快捷键ctrl + a + d
-      5.访问http://192.168.10.191:9999/tree
+      5.访问http://192.168.xxx.xxx:9999/tree
+
+#### **开启小米球服务-发布https服务，通过小米球映射到外网***
+    1.screen运行小米球，httpstun7889对应的7889端口，需要防火墙打开
+    screen -S dataanalyse #启动一个名字为name的screen
+    cd /home/ubuntu/dev/linux_arm7
+    sudo ./ngrok -config ngrok.conf -log=ngrok.log start httpstun7889
+    参考地址：http://ngrok.ciqiuwl.cn/
+
+    2.运行/product/usb3hdd1_3t/dev/digitalcurrency-dataanalyse/prechart0.5/app.py的flask服务
+    https://dataanalyse.guyubao.com/pork
+
+    3.ubuntu screen 实用命令
+        常用的几个命令：
+        screen -S name 启动一个名字为name的screen
+        screen -S name -X quit 删除某个session
+        screen -ls 是列出所有的screen
+        screen -r name或者id，就可以回到某个screen了（如不行先detached： screen -d name）
+        ctrl + a + d 可以回到前一个screen，当时在当前screen运行的程序不会停止
+## **树莓派Ubuntu20+chrome+selenium部署**
+    0.支持库安装
+        sudo apt-get install xvfb
+        sudo python3.8 -m pip install selenium
+        sudo python3.8 -m pip install pyvirtualdisplay
+        查询版本
+        sudo python3.8 -m pip show selenium
+        参考：
+        https://www.cnblogs.com/x54256/p/8403864.html
+        https://blog.csdn.net/qq_31010925/article/details/110308465
+
+    1.ubuntu arm64下载地址
+    https://launchpad.net/~canonical-chromium-builds/+archive/ubuntu/stage/+packages
+    下载如下安装包到指定地址，然后运行下面4个文件，如果运行错误，则运行一下sudo apt-get install -f，注意顺序
+    （如果提示错误dpkg: 依赖关系问题使得xxxxx的配置工作不能继续：则运行sudo apt install -f自动加载依赖包
+    之后在运行第二步的命令安装，就能成功）
+    sudo dpkg -i chromium-codecs-ffmpeg-extra_90.0.4430.93-0ubuntu0.16.04.1_arm64.deb
+    sudo dpkg -i chromium-codecs-ffmpeg_90.0.4430.93-0ubuntu0.16.04.1_arm64.deb
+    sudo dpkg -i chromium-browser_90.0.4430.93-0ubuntu0.16.04.1_arm64.deb
+    sudo dpkg -i chromium-chromedriver_90.0.4430.93-0ubuntu0.16.04.1_arm64.deb
+    其中卸载类似如下
+    sudo dpkg -r chromium-codecs-ffmpeg-extra_91.0.4472.114-0ubuntu0.18.04.1_armhf.deb
+    sudo dpkg -r chromium-codecs-ffmpeg_91.0.4472.114-0ubuntu0.18.04.1_armhf.deb
+    sudo dpkg -r chromium-browser_91.0.4472.114-0ubuntu0.18.04.1_armhf.deb
+    sudo dpkg -r chromium-chromedriver_91.0.4472.114-0ubuntu0.18.04.1_armhf.deb 
+
+    2.加入到环境变量
+    sudo vim ~/.bashrc
+    export PATH=$PATH:/usr/lib/chromium-browser/
+    source .bashrc
+    加入到
+
+    3.查看chrome版本
+    /usr/bin/chromedriver --version
+
+    4.查看安装路径
+    dpkg -L chromium-chromedriver
+
+    5.selenium应用
+    selenium之CSS定位汇总
+    https://www.cnblogs.com/zuodaozhudemeng/p/7487798.html
+    selenium 元素查找与属性
+    https://www.cnblogs.com/hao2018/p/11285827.html
+
+    6.查看进程工具htop
+
+    7.dpkg 
+        查看系统中软件包nano的状态, 支持模糊查询:（l的意思是list）
+        $ dpkg -l nano
+        我个人经常用上面这句话看状态。
+
+        查看软件包nano的详细信息:
+        $ dpkg -s nano
+
+        查询系统中属于nano的文件:
+        $ dpkg-query -L nano
+        $ dpkg -l libxss1 libappindicator1 libindicator7
+        $ dpkg -l xvfb
+        $ dpkg -l unzip
+
+    8.wget
+        a.下载后，用mv移动
+        wget https://launchpad.net/~canonical-chromium-builds/+archive/ubuntu/stage/+files/chromium-browser_90.0.4430.93-0ubuntu0.16.04.1_arm64.deb
+        sudo mv chromium-browser_90.0.4430.93-0ubuntu0.16.04.1_arm64.deb /media/usb3hdd1_3t/software/chrome/ubuntu/ubuntu-arm64-9.0/
+        b.直接指定下载路径
+        wget -P /root/download https://launchpad.net/~canonical-chromium-builds/+archive/ubuntu/stage/+files/chromium-browser_90.0.4430.93-0ubuntu0.16.04.1_arm64.deb
+
   
 #### **ubuntu-002开启文件同步命令**
 
