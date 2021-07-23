@@ -355,6 +355,17 @@ description: 树莓派打造量化平台
     update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
     4.重启mysql
 
+#### **6.10 文本检索 ####**
+    1.fzf
+    安装:sudo apt install fzf
+    使用：
+    命令行输入fzf
+    或fzf --preview 'head -100 {}'
+    1. locate文件检索
+    安装:sudo apt install locate
+    更新索引:updatedb
+    搜索文件:locate -b -i "*lamport*.pdf*"
+
 #### **ubuntu-002开启jupyter服务**
       1.su ubuntu
       2.screen -S jupyterscreen
