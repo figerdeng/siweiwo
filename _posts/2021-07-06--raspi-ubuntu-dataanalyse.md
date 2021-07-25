@@ -354,7 +354,6 @@ description: 树莓派打造量化平台
     SET PASSWORD FOR root=PASSWORD('Test1xxxxx');
     update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
     4.重启mysql
-
 #### **6.10 文本检索 ####**
       1.fzf
         安装:sudo apt install fzf
@@ -372,7 +371,6 @@ description: 树莓派打造量化平台
         find ./ -name "*" | xargs grep "Temporary_random"
         3.3.找出日志文件对应的错误关键字
         find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
-
 #### **ubuntu-002开启jupyter服务**
       1.su ubuntu
       2.screen -S jupyterscreen
