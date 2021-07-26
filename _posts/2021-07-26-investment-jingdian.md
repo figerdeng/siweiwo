@@ -22,8 +22,8 @@ description: 投资经典，收集最新的投资理念和金字塔顶尖人士�
     7.应用解决问题广泛价值大
     8.创始人国家
     9.长时间洗盘最好是上个牛市尾部发型经过熊市考验仍然活着
-    ![中概股龙头](https://siweiwo.top/resource/investment/other/zhonggaigulongtou-202107262000001.jpg)
-    ![中概股龙头](zhonggaigulongtou)
+  ![中概股龙头](https://siweiwo.top/resource/investment/other/zhonggaigulongtou-202107262000001.jpg)
+  ![中概股龙头](zhonggaigulongtou)
 
 
 **1.1 参考网址**
