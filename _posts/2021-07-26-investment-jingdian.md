@@ -16,6 +16,6 @@ description: 投资经典，收集最新的投资理念和金字塔顶尖人士�
 
 
 **1.1 参考网址**
-	
-* [中概股龙头][中概股龙头]
-[中概股龙头]: https://siweiwo.top/resource/investment/other/zhonggaigulongtou-202107262000001.jpg 
+* [中概股龙头][zhonggaigulongtou]
+
+[zhonggaigulongtou]: https://siweiwo.top/resource/investment/other/zhonggaigulongtou-202107262000001.jpg 
