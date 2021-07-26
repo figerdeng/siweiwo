@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 投资经典
-date: 2019-12-16
+date: 2021-07-26
 categories: blog
-tags: [投资经典]
+tags: [投资经典,成功思维]
 description: 投资经典，收集最新的投资理念和金字塔顶尖人士的成功思维
 ---
 
