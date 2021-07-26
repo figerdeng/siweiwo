@@ -18,6 +18,7 @@
 ## 文章命名规则:路径名+文件名(拼音)【没有注明的用英文来命名】
 * resource
 	* 投资investment
+		* other	
 		* 股票stock
 		* 债券bond
 		* 数字货币digitalcash
