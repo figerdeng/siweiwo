@@ -27,9 +27,16 @@ description: 投资经典，收集最新的投资理念和金字塔顶尖人士�
   ![中概股龙头][zhonggaigulongtou]
   
  
+# 2. 腾讯帝国 #
 
+**2.1 腾讯帝国**
+  ![腾讯入股公司][zhonggaigulongtou]
+
+  ![腾讯入股比例][zhonggaigulongtou]
 
 **1.1 参考网址**
 * [中概股龙头][zhonggaigulongtou]
 
 [zhonggaigulongtou]: https://siweiwo.top/resource/investment/other/zhonggaigulongtou-202107262000001.jpg 
+[tengxun-20210802000001]: https://siweiwo.top/resource/investment/other/tengxun-20210802000001.jpg 
+[tengxun-20210802000002]: https://siweiwo.top/resource/investment/other/tengxun-20210802000002.jpg 
