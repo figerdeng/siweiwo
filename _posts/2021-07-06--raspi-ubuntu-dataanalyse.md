@@ -281,9 +281,8 @@ description: 树莓派打造量化平台
       sudo vim /etc/ppp/options
       改lcp-echo-interval 300
       icp-echo-failure 40
-
-
       写一段代码，读写硬盘15分钟间隔，然后见监控一下
+
 #### **6.3 日志输出等级**
       1、DEBUG
       面向功能开发人员，一般在功能开发阶段使用，用来给开发人员检查功能是否正常的。
@@ -307,6 +306,7 @@ description: 树莓派打造量化平台
 
       另：
       日志只可记录系统运行状态，不可输出用户敏感数据。
+
 #### **6.4 日志输出等级**
     获取外网ip：curl www.icanhazip.com
 
@@ -341,6 +341,7 @@ description: 树莓派打造量化平台
   或
   netstat -tunlp
   查看到对应的进程杀掉就可以了
+  
 #### **6.9 mysql密码修改**
     1.登入
     mysql -u root -p
