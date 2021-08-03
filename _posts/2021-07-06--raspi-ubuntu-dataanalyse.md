@@ -310,7 +310,7 @@ description: 树莓派打造量化平台
 #### **6.4 日志输出等级**
     获取外网ip：curl www.icanhazip.com
 
-#### **6.5 VSCode 快捷键 ####**
+#### **6.5 VSCode 快捷键 **
       vscode代码编辑器折叠所有区域的代码快捷键
       查看了使用说明，快捷键如下：
       1. 折叠所有区域代码的快捷键：ctrl+k, ctrl+0;
@@ -320,7 +320,7 @@ description: 树莓派打造量化平台
       3. 自动格式化代码的快捷键：ctrl+k, ctrl+f;
                         先按下ctrl和K，再按下ctrl和f;
 
-#### **6.6 ubunutu 防火墙开启和端口开放 ####**
+#### **6.6 ubunutu 防火墙开启和端口开放 **
       解决机器无端重启，宝塔端口被墙以后无法正常登录,还有mysql对应的端口进行重新开放，可以通过宝塔面板进行处理。（宝塔和mysql只要机器重启，则端口映射需要重新处理一下）      
       查看防火墙状态：sudo ufw status
       重启ufw防火墙：sudo ufw reload 
@@ -329,11 +329,11 @@ description: 树莓派打造量化平台
 
 
 
-#### **6.7 ubunutu 启动命令 ####**
+#### **6.7 ubunutu 启动命令 **
   重启：sudo reboot
   关机：shutdown -h now或halt或poweroff
 
-#### **6.8 flask问题 ####**
+#### **6.8 flask问题 **
   端口被占用，查询7891端口的进程，然后，杀掉
   lsof -i:7891
   kill -9 进程id
@@ -341,7 +341,7 @@ description: 树莓派打造量化平台
   或
   netstat -tunlp
   查看到对应的进程杀掉就可以了
-#### **6.9 mysql密码修改 ####**
+#### **6.9 mysql密码修改 **
     1.登入
     mysql -u root -p
     输入root密码
@@ -355,26 +355,26 @@ description: 树莓派打造量化平台
     update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
     4.重启mysql
 
-#### **6.10 文本检索 ####**
-    1.fzf
-    安装:sudo apt install fzf
-    使用：
-    命令行输入fzf
-    或fzf --preview 'head -100 {}'
-    2.locate文件检索
-    安装:sudo apt install locate
-    更新索引:updatedb
-    搜索文件:locate -b -i "*lamport*.pdf*"
-    3.find命令
-    3.1.在根文件夹下查找后缀名为txt且含有关键字route的文件，列出文件名和route所在行。
-    find / -name '*.txt' | xargs grep 'route'
-    3.2.表示当前目录下搜索含有Temporary_random内容的所有文件
-    find ./ -name "*" | xargs grep "Temporary_random"
-    3.3.找出日志文件对应的错误关键字
-    find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
+#### **6.10 文本检索 **
+      1.fzf
+      安装:sudo apt install fzf
+      使用：
+      命令行输入fzf
+      或fzf --preview 'head -100 {}'
+      2.locate文件检索
+      安装:sudo apt install locate
+      更新索引:updatedb
+      搜索文件:locate -b -i "*lamport*.pdf*"
+      3.find命令
+      3.1.在根文件夹下查找后缀名为txt且含有关键字route的文件，列出文件名和route所在行。
+      find / -name '*.txt' | xargs grep 'route'
+      3.2.表示当前目录下搜索含有Temporary_random内容的所有文件
+      find ./ -name "*" | xargs grep "Temporary_random"
+      3.3.找出日志文件对应的错误关键字
+      find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
             
 
-#### **6.11 python常见错误 ####**
+#### **6.11 python常见错误 **
       1.urllib3.connectionpool-WARNING:Connection pool is full, discarding connection
       解决办法：
       sudo vim lib/python3/dist-packages/requests/adapters.py（针对python3.8 对于ubuntu用户就是python）
