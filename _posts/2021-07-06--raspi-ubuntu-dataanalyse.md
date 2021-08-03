@@ -310,7 +310,7 @@ description: 树莓派打造量化平台
 #### **6.4 日志输出等级**
     获取外网ip：curl www.icanhazip.com
 
-#### **6.5 VSCode 快捷键 **
+#### **6.5 VSCode 快捷键**
       vscode代码编辑器折叠所有区域的代码快捷键
       查看了使用说明，快捷键如下：
       1. 折叠所有区域代码的快捷键：ctrl+k, ctrl+0;
@@ -320,7 +320,7 @@ description: 树莓派打造量化平台
       3. 自动格式化代码的快捷键：ctrl+k, ctrl+f;
                         先按下ctrl和K，再按下ctrl和f;
 
-#### **6.6 ubunutu 防火墙开启和端口开放 **
+#### **6.6 ubunutu 防火墙开启和端口开放**
       解决机器无端重启，宝塔端口被墙以后无法正常登录,还有mysql对应的端口进行重新开放，可以通过宝塔面板进行处理。（宝塔和mysql只要机器重启，则端口映射需要重新处理一下）      
       查看防火墙状态：sudo ufw status
       重启ufw防火墙：sudo ufw reload 
@@ -329,11 +329,11 @@ description: 树莓派打造量化平台
 
 
 
-#### **6.7 ubunutu 启动命令 **
+#### **6.7 ubunutu 启动命令**
   重启：sudo reboot
   关机：shutdown -h now或halt或poweroff
 
-#### **6.8 flask问题 **
+#### **6.8 flask问题**
   端口被占用，查询7891端口的进程，然后，杀掉
   lsof -i:7891
   kill -9 进程id
@@ -341,7 +341,7 @@ description: 树莓派打造量化平台
   或
   netstat -tunlp
   查看到对应的进程杀掉就可以了
-#### **6.9 mysql密码修改 **
+#### **6.9 mysql密码修改**
     1.登入
     mysql -u root -p
     输入root密码
@@ -355,7 +355,7 @@ description: 树莓派打造量化平台
     update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
     4.重启mysql
 
-#### **6.10 文本检索 **
+#### **6.10 文本检索**
       1.fzf
       安装:sudo apt install fzf
       使用：
@@ -374,7 +374,7 @@ description: 树莓派打造量化平台
       find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
             
 
-#### **6.11 python常见错误 **
+#### **6.11 python常见错误**
       1.urllib3.connectionpool-WARNING:Connection pool is full, discarding connection
       解决办法：
       sudo vim lib/python3/dist-packages/requests/adapters.py（针对python3.8 对于ubuntu用户就是python）
@@ -528,7 +528,7 @@ description: 树莓派打造量化平台
     find . -name ".git" | xargs rm -Rf
     //初始化仓库
     git init
-#### **ubuntu压缩和解压 ####**
+#### **ubuntu压缩和解压**
     1.压缩当前目前下的【全能行证券交易终端】目录下的所有文件---》全能行证券交易终端.tar.gz
       tar -zcvf 全能行证券交易终端.tar.gz 全能行证券交易终端
     2.解压
@@ -544,7 +544,7 @@ description: 树莓派打造量化平台
           tar解密解压：
               dd if=filename.tar.gz | openssl des3 -d -k password | tar xzvf - -C解压路径
           password为密码自行设定，出现如下错误，一般是需要通过-C来指定解压路径：
-#### **ubuntu7z的压缩和解压 ####**
+#### **ubuntu7z的压缩和解压**
     1.7z的解压缩
     2.ubuntu下安装7z
     3.7z压缩和解压
@@ -559,10 +559,10 @@ description: 树莓派打造量化平台
       7z a -t7z zhanghu.7z -pTestxxxxx zhanghu.txt
       7z x zhanghu.7z -pTestxxxxx
 
-#### **文件对应关系 ####**
+#### **文件对应关系**
 scp -r /media/usb3hdd1_120g/dev/ root@192.168.10.191:/product/usb3hdd1_3t/dev/
 scp -r /media/usb3hdd1_120g/computerbak/ root@192.168.10.191:/product/usb3hdd1_3t/
-#### **Ubuntu ssh服务器copy ####**
+#### **Ubuntu ssh服务器copy**
     1.两台linux服务器之间免密scp，在A机器上向B远程拷贝文件
       操作步骤：
       1、在A机器上，执行ssh-keygen -t rsa，一路按Enter，不需要输入任何内容。（如有提示是否覆盖，可输入y后按回车）
@@ -577,7 +577,7 @@ scp -r /media/usb3hdd1_120g/computerbak/ root@192.168.10.191:/product/usb3hdd1_3
       Copy 文件
       scp /media/usb3hdd1_120g/dev/file root@192.168.10.191:/product/usb3hdd1_3t/dev/
 
-#### **机器部署规划 ####**
+#### **机器部署规划**
     0：机器说明
       ubuntu_001：树莓派ubuntu机器策略交易，配置4核+4G+固态500g系统盘+外接120G外置移动硬盘
       ubuntu_002：树莓派ubuntu机器策略分析，配置4核+8G+固态500g系统盘+外接3T外置机械硬盘
