@@ -361,19 +361,15 @@ description: 树莓派打造量化平台
     使用：
     命令行输入fzf
     或fzf --preview 'head -100 {}'
-
-    2. locate文件检索
+    2.locate文件检索
     安装:sudo apt install locate
     更新索引:updatedb
     搜索文件:locate -b -i "*lamport*.pdf*"
-
     3.find命令
     3.1.在根文件夹下查找后缀名为txt且含有关键字route的文件，列出文件名和route所在行。
     find / -name '*.txt' | xargs grep 'route'
-
     3.2.表示当前目录下搜索含有Temporary_random内容的所有文件
     find ./ -name "*" | xargs grep "Temporary_random"
-    
     3.3.找出日志文件对应的错误关键字
     find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
             
