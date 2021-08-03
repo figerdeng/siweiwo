@@ -373,14 +373,13 @@ description: 树莓派打造量化平台
     find ./ -name "*" | xargs grep "Temporary_random"
     3.3.找出日志文件对应的错误关键字
     find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
-            
 
 #### **6.11 python常见错误**
     1.urllib3.connectionpool-WARNING:Connection pool is full, discarding connection
     解决办法：
     sudo vim lib/python3/dist-packages/requests/adapters.py（针对python3.8 对于ubuntu用户就是python）
     将DEFAULT_POOLSIZE改大一些，因为池子有个大小。设置100就可以了。
-            
+
 #### **ubuntu-002开启jupyter服务**
     1.su ubuntu
     2.screen -S jupyterscreen
@@ -405,6 +404,7 @@ description: 树莓派打造量化平台
         screen -ls 是列出所有的screen
         screen -r name或者id，就可以回到某个screen了（如不行先detached： screen -d name）
         ctrl + a + d 可以回到前一个screen，当时在当前screen运行的程序不会停止
+
 ## **树莓派Ubuntu20+chrome+selenium部署**
     0.支持库安装
         sudo apt-get install xvfb
