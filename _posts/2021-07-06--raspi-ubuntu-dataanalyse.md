@@ -372,6 +372,7 @@ description: 树莓派打造量化平台
     find ./ -name "*" | xargs grep "Temporary_random"
     3.3.找出日志文件对应的错误关键字
     find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
+            
 
 #### **6.11 python常见错误 ####**
       1.urllib3.connectionpool-WARNING:Connection pool is full, discarding connection
