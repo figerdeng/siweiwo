@@ -357,36 +357,36 @@ description: 树莓派打造量化平台
     4.重启mysql
 
 #### **6.10 文本检索**
-      1.fzf
-      安装:sudo apt install fzf
-      使用：
-      命令行输入fzf
-      或fzf --preview 'head -100 {}'
-      2.locate文件检索
-      安装:sudo apt install locate
-      更新索引:updatedb
-      搜索文件:locate -b -i "*lamport*.pdf*"
-      3.find命令
-      3.1.在根文件夹下查找后缀名为txt且含有关键字route的文件，列出文件名和route所在行。
-      find / -name '*.txt' | xargs grep 'route'
-      3.2.表示当前目录下搜索含有Temporary_random内容的所有文件
-      find ./ -name "*" | xargs grep "Temporary_random"
-      3.3.找出日志文件对应的错误关键字
-      find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
+    1.fzf
+    安装:sudo apt install fzf
+    使用：
+    命令行输入fzf
+    或fzf --preview 'head -100 {}'
+    2.locate文件检索
+    安装:sudo apt install locate
+    更新索引:updatedb
+    搜索文件:locate -b -i "*lamport*.pdf*"
+    3.find命令
+    3.1.在根文件夹下查找后缀名为txt且含有关键字route的文件，列出文件名和route所在行。
+    find / -name '*.txt' | xargs grep 'route'
+    3.2.表示当前目录下搜索含有Temporary_random内容的所有文件
+    find ./ -name "*" | xargs grep "Temporary_random"
+    3.3.找出日志文件对应的错误关键字
+    find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
             
 
 #### **6.11 python常见错误**
-      1.urllib3.connectionpool-WARNING:Connection pool is full, discarding connection
-      解决办法：
-      sudo vim lib/python3/dist-packages/requests/adapters.py（针对python3.8 对于ubuntu用户就是python）
-      将DEFAULT_POOLSIZE改大一些，因为池子有个大小。设置100就可以了。
+    1.urllib3.connectionpool-WARNING:Connection pool is full, discarding connection
+    解决办法：
+    sudo vim lib/python3/dist-packages/requests/adapters.py（针对python3.8 对于ubuntu用户就是python）
+    将DEFAULT_POOLSIZE改大一些，因为池子有个大小。设置100就可以了。
             
 #### **ubuntu-002开启jupyter服务**
-      1.su ubuntu
-      2.screen -S jupyterscreen
-      3.jupyter notebook
-      4.快捷键ctrl + a + d
-      5.访问http://192.168.xxx.xxx:9999/tree
+    1.su ubuntu
+    2.screen -S jupyterscreen
+    3.jupyter notebook
+    4.快捷键ctrl + a + d
+    5.访问http://192.168.xxx.xxx:9999/tree
 
 #### **开启小米球服务-发布https服务，通过小米球映射到外网***
     1.screen运行小米球，httpstun7889对应的7889端口，需要防火墙打开
