@@ -31,6 +31,6 @@ description: 技术分析
 
 
 [BTC-S2F]: https://www.qkl123.com/data/s2f/btc 
-[BTC-S2F-001]: https://siweiwo.top/resource/investment/other/tangqian-001.png
-[tangqian-001]: https://siweiwo.top/resource/investment/other/tangqian-002.png
+[BTC-S2F-001]: https://siweiwo.top/resource/investment/other/BTC-S2F001.png
+[tangqian-001]: https://siweiwo.top/resource/investment/other/tangqian-001.png
 
