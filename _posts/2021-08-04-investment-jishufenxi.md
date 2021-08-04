@@ -15,10 +15,22 @@ description: 技术分析
   
  
 
+
+
+** 唐奇安通道**
+海归交易法：
+  中间橙色的是止损线
+  下面红线是下突破线
+  上涨如果突破绿线做多
+  回落止损线止损
+  下跌如果突破红线，做空
+  上涨至红线止损
+  ![唐奇安通道][tangqian-001]
  
 参考：
 
 
 [BTC-S2F]: https://www.qkl123.com/data/s2f/btc 
-[BTC-S2F-001]: https://siweiwo.top/resource/investment/other/BTC-S2F001.png 
+[BTC-S2F-001]: https://siweiwo.top/resource/investment/other/tangqian-001.png
+[tangqian-001]: https://siweiwo.top/resource/investment/other/tangqian-002.png
 
