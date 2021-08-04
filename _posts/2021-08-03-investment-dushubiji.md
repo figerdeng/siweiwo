@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 经典书籍读书笔记
-date: 2021-08-04
+date: 2021-08-03
 categories: blog
 tags: [经典书籍,读书笔记]
 description: 经典书籍读书笔记
