@@ -30,6 +30,12 @@ description: 技术分析
   ![当110线穿越时，一般阶段性顶部][Pi005]
   ![当110线穿越时，一般阶段性顶部][Pi006]
 
+**1.4 [ahr999囤币指标][BTC-ahr999囤币指标]**
+
+**1.5 [比特币机构持仓][比特币机构持仓]**
+
+
+
 # 2. 交易策略 #
 
 **2.1 唐奇安通道**
@@ -98,3 +104,5 @@ description: 技术分析
 [技术、心理与哲学]:https://b.01btc.com/
 [非小号]:https://www.feixiaohao.cc/
 [coinbase]:https://coinmarketcap.com/
+[比特币机构持仓]:https://www.qkl123.com/data/institutionalholdings/btc
+[BTC-ahr999囤币指标]:https://www.qkl123.com/data/ahr999/btc

@@ -17,7 +17,11 @@ description: 经典书籍读书笔记
   ![中概股龙头][zhonggaigulongtou]
   
  
+# 1. 币圈技术分析 #
 
+**1.1 第一章**
+	
+  
  
 参考：
 
