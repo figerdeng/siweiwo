@@ -378,6 +378,179 @@ description: 树莓派打造量化平台
     sudo vim lib/python3/dist-packages/requests/adapters.py（针对python3.8 对于ubuntu用户就是python）
     将DEFAULT_POOLSIZE改大一些，因为池子有个大小。设置100就可以了。
 
+#### **6.12 centos 6.8 http代理服务器**
+    注意提醒：tinyproxy有时候不稳定
+    [参考网址](https://www.cnblogs.com/pythonClub/p/9879446.html)
+    安装tinyproxy
+        yum install tinyproxy
+        vim /etc/tinyproxy/tinyproxy.conf
+          修改Port 端口号为你想设定的值
+          将Allow 选项后面的IP改成你想使用这个代理的客户机的IP，如果你想任何人都可以访问，把这行前面加个#注释一下就行了
+        使用
+        service tinyproxy stop
+        service tinyproxy start
+        service tinyproxy restart
+        来停止、启动、重启tinystart
+        将tinyproxy设置开机启动
+        chkconfig --level 2345 tinyproxy on
+        设置防火墙
+        iptables -I INPUT -p tcp --dport 设置的代理端口 -j ACCEPT  && service iptables save &&service iptables restart
+        [防火墙](https://cloud.tencent.com/developer/article/1157535)：
+          状态
+          service iptable status
+          临时关闭防火墙
+          service iptables stop
+          永久关闭防火墙
+          chkconfig iptables off
+
+          centos 7.3：
+            systemctl stop firewalld.service #停止firewall
+            systemctl disable firewalld.service #禁止firewall开机启动
+            firewall-cmd --state #查看默认防火墙状态（关闭后显示notrunning，开启后显示running）
+        [Centos6.8防火墙配置](https://www.cnblogs.com/xxoome/p/6884376.html)
+              1、基本操作
+              # 查看防火墙状态
+              service iptables status
+              # 停止防火墙
+              service iptables stop 
+              # 启动防火墙
+              service iptables start 
+              # 重启防火墙
+              service iptables restart 
+              # 永久关闭防火墙
+              chkconfig iptables off 
+              # 永久关闭后重启
+              chkconfig iptables on　
+
+              2、查看防火墙状态，防火墙处于开启状态并且只开放了22端口
+              3、开启80端口
+              vim /etc/sysconfig/iptables
+              # 加入如下代码，比着两葫芦画瓢 :)
+              -A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+              保存退出后重启防火墙
+              service iptables restart          
+
+        开启路由功能:
+          vi /etc/sysctl.conf
+          net.ipv4.ip_forward = 0  ，将0改成1
+          或echo "1" > /proc/sys/net/ipv4/ip_forward
+          sysctl -p  #重启
+        配置dns:
+          vim /etc/resolv.conf
+            nameserver 223.5.5.5
+            nameserver 119.29.29.29
+            nameserver 180.76.76.76
+            nameserver 114.114.114.114
+            nameserver 8.8.8.8
+        查看日志：
+          cat /var/log/tinyproxy/tinyproxy.log
+        查看监听端口：
+          netstat -ntl
+        出现问题：
+          让/etc/tinyproxy.conf中的所有端口都通过删除ConnectPort行，或则添加对应的端口
+        测试：
+          curl -x 127.0.0.1:8888 google.com
+        
+    python测试代理：
+      import requests
+      requests.get('http://httpbin.org/ip',proxies={'http':'http://xxx:8888'}).json()
+      输出：
+          {'origin': '代理ip'} 
+
+    命令行测试代理：
+        curl -x xxxxIp:8888 google.com
+
+#### **6.13 Ubuntu14.04 http代理服务器squid3**
+    注意提醒：tinyproxy有时候不稳定
+    开启服务：
+    service squid start
+    停止服务：
+    service squid stop
+    vim /etc/squid/squid.conf
+    vim /etc/squid/squid.conf
+    [Ubuntu下搭建高匿HTTP代理（亲测可用）](https://www.cnblogs.com/dadonggg/p/10019026.html)
+    [Squid 启动/停止/重载/服务异常排查实用命令](https://blog.51cto.com/u_2333657/2330887)
+    [squid：http和https的代理服务器设置指南](https://blog.csdn.net/liumiaocn/article/details/80586879)
+    [Squid代理常见错误](https://blog.csdn.net/qq_31666147/article/details/52047358)
+    [使用squid代理后某些网站无法访问的解决办法](https://blog.51cto.com/xjsunjie/388405)
+    [centos搭建http代理](https://blog.csdn.net/weixin_42081389/article/details/105405148)
+    
+#### **6.12 centos 6.8 socks代理服务器**
+    注意提醒：
+      a.无密码的稳定，带用户密码的不稳定
+      b.python调用模块，需要安装pip install requests[socks],对应我们系统：sudo python3.8 -m pip install requests[socks]
+          代理调用模式:self.PROXY为ip:端口
+              proxies = {'http':"http://{0}".format(self.PROXY), 'https':"https://{0}".format(self.PROXY)} 
+              proxies = {'http':"socks5://{0}".format(self.PROXY), 'https':"socks5h://{0}".format(self.PROXY)}    
+          [Python设置和HTTP请求socks,Pythonrequests,http,代理](https://www.pythonf.cn/read/160622)
+
+      c.查看运行日志
+        cat /var/log/ss5/ss5.log
+      d.如安装出现问题，升级一下
+          yum -y update：升级所有包同时也升级软件和系统内核；
+      e.如果代理测试本机正常127.0.0.1，外网机器不行，那么考虑dns和防火墙问题：
+        dns(加入靠谱的dns):
+          vim /etc/resolv.conf 
+          nameservre 8.8.8.8
+          nameservre 8.8.4.4
+          service network  restart
+      f.查看用户环境
+        uname -a
+        service tinyproxy status
+    参考网址：
+      [记一次socks5部署时的坑](https://blog.csdn.net/xiaohuixing16134/article/details/88530213)  
+      [安装 SS5 SOCKS5 代理服务器，多进程/多IP地址出口/多端口 ](https://www.huangzhong.ca/zh/ss5-multiple-instances-ips-centos/)  
+    安装：
+      wget https://nchc.dl.sourceforge.net/project/ss5/ss5/3.8.9-6/ss5-3.8.9-6.tar.gz(原来是版本有问题，最新的ss5-3.8.9-7.tar.gz有问题，装回ss5-3.8.9-6.tar.gz就可以了!  )
+      yum -y install gcc automake make
+      yum -y install pam-devel openldap-devel cyrus-sasl-devel openssl-devel
+      tar xvf ss5-3.8.9-6.tar.gz
+      cd ss5-3.8.9
+      ./configure && make && make install
+    无验证：
+        vim /etc/opt/ss5/ss5.conf
+          auth 0.0.0.0/0 - -
+          permit - 0.0.0.0/0 - 0.0.0.0/0 - - - - -   
+    有验证，带账户密码：
+      1.新建用户和密码
+      useradd username
+      passwd username
+      2.授予普通用户sudo权限
+      打开/etc/sudoers文件，在  "root ALL=(ALL) ALL"下面添加一行 "username ALL=(ALL) ALL"或者 "username ALL=(ALL) NOPASSWD: ALL"
+      3.配置
+        vim /etc/opt/ss5/ss5.conf
+          auth 0.0.0.0/0 - u
+          permit u 0.0.0.0/0 - 0.0.0.0/0 - - - - -
+        vim /etc/sysconfig/ss5
+          SS5_OPTS=" -u username -b 0.0.0.0:1080"
+        vim /etc/opt/ss5/ss5.passwd
+          username pwd
+      开启服务等命令：
+        service ss5 stop
+        service ss5 start
+        service ss5 restart
+        检测服务：
+              netstat -anp | grep ss5
+        随系统启动：
+              chmod a+x /etc/init.d/ss5
+              chkconfig --add ss5 
+              chkconfig --level 345 ss5 on
+              service ss5 start
+      测试代理：
+        检测ip地址区域：
+            curl myip.ipip.net
+            curl myip.ipip.net --socks5 xx.xx.xx.xx:1080
+            或curl --socks5 127.0.0.1:1080 http://google.com/            
+        带验证:
+          curl myip.ipip.net --socks5 test:test@xx.xx.xx.xx :1080 
+          或curl --socks5 user:pwd@127.0.0.1:1080 http://google.com/      
+
+#### **6.14 shadowsocks 服务**    
+    [自己搭建翻墙服务器 ](https://jiyiren.github.io/2016/10/06/fanqiang/)
+    vim /etc/ssh/sshd_config
+#### **6.15 linux 远程端口22修改** 
+    [Linux 修改远程默认端口](https://blog.csdn.net/little_skeleton/article/details/81075065)
+    
 #### **ubuntu-002开启jupyter服务**
     1.su ubuntu
     2.screen -S jupyterscreen
