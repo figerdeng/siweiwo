@@ -383,6 +383,7 @@ description: 树莓派打造量化平台
     解决办法：
     sudo vim lib/python3/dist-packages/requests/adapters.py（针对python3.8 对于ubuntu用户就是python）
     将DEFAULT_POOLSIZE改大一些，因为池子有个大小。设置100就可以了。
+  ```
 
 #### **6.12 centos 6.8 http代理服务器**
   ```命令行说明
@@ -466,6 +467,7 @@ description: 树莓派打造量化平台
 
     命令行测试代理：
         curl -x xxxxIp:8888 google.com
+  ```
 
 #### **6.13 Ubuntu14.04 http代理服务器squid3**
   ```命令行说明
@@ -482,6 +484,7 @@ description: 树莓派打造量化平台
     [Squid代理常见错误](https://blog.csdn.net/qq_31666147/article/details/52047358)
     [使用squid代理后某些网站无法访问的解决办法](https://blog.51cto.com/xjsunjie/388405)
     [centos搭建http代理](https://blog.csdn.net/weixin_42081389/article/details/105405148)
+  ```
     
 #### **6.12 centos 6.8 socks代理服务器**
   ```命令行说明
@@ -552,7 +555,8 @@ description: 树莓派打造量化平台
             或curl --socks5 127.0.0.1:1080 http://google.com/            
         带验证:
           curl myip.ipip.net --socks5 test:test@xx.xx.xx.xx :1080 
-          或curl --socks5 user:pwd@127.0.0.1:1080 http://google.com/      
+          或curl --socks5 user:pwd@127.0.0.1:1080 http://google.com/ 
+  ```     
 
 #### **6.14 shadowsocks 服务**    
     [自己搭建翻墙服务器 ](https://jiyiren.github.io/2016/10/06/fanqiang/)
