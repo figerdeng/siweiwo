@@ -355,7 +355,7 @@ description: 树莓派打造量化平台
     4.重启mysql
 
 #### **6.10 文本检索**
-    ```python
+  ```命令行说明
     fzf：
     安装:sudo apt install fzf
     使用：
@@ -374,7 +374,7 @@ description: 树莓派打造量化平台
     find ./ -name "*" | xargs grep "Temporary_random"
     找出日志文件对应的错误关键字
     find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
-    ```
+  ```
 
 
 #### **6.11 python常见错误**
