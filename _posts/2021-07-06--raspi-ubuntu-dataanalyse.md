@@ -354,28 +354,13 @@ description: 树莓派打造量化平台
     update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
     4.重启mysql
 
-#### **6.9 文本检索**
-    1.登入
-    mysql -u root -p
-    输入root密码
-    2.切换库
-    use mysql
-    切换库
-    3.更新密码 
-    UPDATE user SET password=PASSWORD('Test1xxxx') WHERE user='root';
-    FLUSH PRIVILEGES;
-    SET PASSWORD FOR root=PASSWORD('Test1xxxxx');
-    update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
-    4.重启mysql
-
-
 #### **6.10 文本检索**
     fzf：
     安装:sudo apt install fzf
     使用：
     命令行输入fzf
     或fzf --preview 'head -100 {}'
-    
+
     locate文件检索：
     安装:sudo apt install locate
     更新索引:updatedb
@@ -388,6 +373,8 @@ description: 树莓派打造量化平台
     find ./ -name "*" | xargs grep "Temporary_random"
     找出日志文件对应的错误关键字
     find /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/strategy -name '20210725.log' | xargs grep 'CRITICAL'
+
+
 
 #### **6.11 python常见错误**
     1.urllib3.connectionpool-WARNING:Connection pool is full, discarding connection
