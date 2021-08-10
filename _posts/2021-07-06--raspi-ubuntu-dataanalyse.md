@@ -378,12 +378,14 @@ description: 树莓派打造量化平台
 
 
 #### **6.11 python常见错误**
+  ```命令行说明
     1.urllib3.connectionpool-WARNING:Connection pool is full, discarding connection
     解决办法：
     sudo vim lib/python3/dist-packages/requests/adapters.py（针对python3.8 对于ubuntu用户就是python）
     将DEFAULT_POOLSIZE改大一些，因为池子有个大小。设置100就可以了。
 
 #### **6.12 centos 6.8 http代理服务器**
+  ```命令行说明
     注意提醒：tinyproxy有时候不稳定
     [参考网址](https://www.cnblogs.com/pythonClub/p/9879446.html)
     安装tinyproxy
@@ -466,6 +468,7 @@ description: 树莓派打造量化平台
         curl -x xxxxIp:8888 google.com
 
 #### **6.13 Ubuntu14.04 http代理服务器squid3**
+  ```命令行说明
     注意提醒：tinyproxy有时候不稳定
     开启服务：
     service squid start
@@ -481,6 +484,7 @@ description: 树莓派打造量化平台
     [centos搭建http代理](https://blog.csdn.net/weixin_42081389/article/details/105405148)
     
 #### **6.12 centos 6.8 socks代理服务器**
+  ```命令行说明
     注意提醒：
       a.无密码的稳定，带用户密码的不稳定
       b.python调用模块，需要安装pip install requests[socks],对应我们系统：sudo python3.8 -m pip install requests[socks]
