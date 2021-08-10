@@ -354,6 +354,21 @@ description: 树莓派打造量化平台
     update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
     4.重启mysql
 
+#### **6.9 文本检索**
+    1.登入
+    mysql -u root -p
+    输入root密码
+    2.切换库
+    use mysql
+    切换库
+    3.更新密码 
+    UPDATE user SET password=PASSWORD('Test1xxxx') WHERE user='root';
+    FLUSH PRIVILEGES;
+    SET PASSWORD FOR root=PASSWORD('Test1xxxxx');
+    update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
+    4.重启mysql
+
+
 #### **6.10 文本检索**
     fzf：
     安装:sudo apt install fzf
