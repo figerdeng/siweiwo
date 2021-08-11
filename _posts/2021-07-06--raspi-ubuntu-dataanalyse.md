@@ -519,11 +519,11 @@ description: 树莓派打造量化平台
       tar xvf ss5-3.8.9-6.tar.gz
       cd ss5-3.8.9
       ./configure && make && make install
-    无验证：
+    无验证(只需要配置这个文件就够了，风险有可能别人对公网的机器进行扫描用到你的代理，其他没什么)：
         vim /etc/opt/ss5/ss5.conf
           auth 0.0.0.0/0 - -
           permit - 0.0.0.0/0 - 0.0.0.0/0 - - - - -   
-    有验证，带账户密码：
+    有验证，带账户密码(1.2步骤可以不用做，写在这里作为一个参考，直接配置3就可，这种严重很多浏览器不支持，并且配置以后google很多网站无法访问)：
       1.新建用户和密码
       useradd username
       passwd username
@@ -531,12 +531,13 @@ description: 树莓派打造量化平台
       打开/etc/sudoers文件，在  "root ALL=(ALL) ALL"下面添加一行 "username ALL=(ALL) ALL"或者 "username ALL=(ALL) NOPASSWD: ALL"
       3.配置
         vim /etc/opt/ss5/ss5.conf
-          auth 0.0.0.0/0 - u
-          permit u 0.0.0.0/0 - 0.0.0.0/0 - - - - -
-        vim /etc/sysconfig/ss5
-          SS5_OPTS=" -u username -b 0.0.0.0:1080"
-        vim /etc/opt/ss5/ss5.passwd
+          #auth 0.0.0.0/0 - u
+          #permit u 0.0.0.0/0 - 0.0.0.0/0 - - - - -
+        vim /etc/sysconfig/ss5（将下面注解打开）
+           SS5_OPTS=" -u root"
+        vim /etc/opt/ss5/ss5.passwd(用户名密码可以设置很多，无需系统的用户名和密码)
           username pwd
+          username2 pwd
       开启服务等命令：
         service ss5 stop
         service ss5 start
