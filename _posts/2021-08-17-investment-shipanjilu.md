@@ -25,7 +25,7 @@ description: 股市实盘记录
   伊利股份周线背离
   ![伊利股份周线背离][600887-003]
   伊利股份周月线背离
-  ![伊利股份月线背离][600887-003]
+  ![伊利股份月线背离][600887-004]
 
    操作记录：
       ```操盘记录
@@ -38,6 +38,6 @@ description: 股市实盘记录
 [600887]: https://cn.tradingview.com/chart/VcKE8GBT/?symbol=COINBASE%3ABTCUSD 
 [600887-001]: https://siweiwo.top/resource/investment/other/600887-001.png
 [600887-002]: https://siweiwo.top/resource/investment/other/600887-002.png
-[600887-002]: https://siweiwo.top/resource/investment/other/600887-003.png
-[600887-002]: https://siweiwo.top/resource/investment/other/600887-004.png
+[600887-003]: https://siweiwo.top/resource/investment/other/600887-003.png
+[600887-004]: https://siweiwo.top/resource/investment/other/600887-004.png
 
