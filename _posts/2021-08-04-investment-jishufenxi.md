@@ -139,6 +139,10 @@ description: 技术分析
 
   8.3 8.1-2总结
     无论哪个，如果盈利记得压力位提取本金，上述方法针对周期性和大跌跌破净值，有金主爸爸的品种，跌透了。
+  因为对于这种属于左侧抄底方法，要么定位定投，要么精准重仓，首先要保证品种不会死，，并且“低价boll缩口k线横盘”（周k线，因为要强调灵敏性）还要保证月rsi足够低，这些指标一旦共振就是最好的抄底时机。尤其要“低价boll缩口k线横盘”，不然就会买高了，可以看如下图形：
+  
+![000980-003][000980-003]  
+
   可以应用新五丰周期品种。底部判断，boll线在中轨附近来回波动，缩口，上中下轨贴成线，价格止跌横盘.
   对于炒作板块，如青龙，则[日线]10或者20日作为止跌线，方法可以参考郑煤操作方法
   周k线相对中期趋势比较好的如果金叉一般几个月行情，死叉一般也是月回调。所以周线判断大趋势，然后结合日k线判断短期方向，止赢点。
@@ -204,6 +208,7 @@ description: 技术分析
 [BTC-ahr999囤币指标]:https://www.qkl123.com/data/ahr999/btc
 [000980-001]: https://siweiwo.top/resource/investment/other/000980-001.png
 [000980-002]: https://siweiwo.top/resource/investment/other/000980-002.png
+[000980-003]: https://siweiwo.top/resource/investment/other/000980-003.png
 [600121-001]: https://siweiwo.top/resource/investment/other/600121-001.png
 [600121-002]: https://siweiwo.top/resource/investment/other/600121-002.png
 [600121-003]: https://siweiwo.top/resource/investment/other/600121-003.png
