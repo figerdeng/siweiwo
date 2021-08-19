@@ -46,19 +46,19 @@ BTC的ema线21日和50日线，作为牛转熊的分界指标，50日线不跌�
         2013年：跌破21线2-3根线后（没跌破50日线）横盘企稳以后开始2014大牛市
         2014年高点开始回撤跌破21日线，然后跌破50日线后，又开始反弹至21日线上方，然后开始回调到21日线，然后破21日线和50日线。熊市开启。
 
-![shipanfeixi-002][shipanfeixi-002]
+![shipanfenxi-002][shipanfenxi-002]
 
     2017年牛市：
         2017高点年跌破21日线，然后跌破50日线后，又开始反弹至21日线上方，然后开始回调到21日线，返回回踩21日线。
         然后破21日线和50日线。熊市开启
 
-![shipanfeixi-003][shipanfeixi-003]
+![shipanfenxi-003][shipanfenxi-003]
 
     2021年牛市：
         2021年高点跌破21日线，然后跌破50日线后，又开始反弹至21日线上方。
         总结：参考2013-2014，2017年两拨牛市，如果牛市顶部如果跌破21日、50日线后，然后反弹到21日线上方，如果再次跌破21日线则可以考虑出场了
 
-![shipanfeixi-004][shipanfeixi-004]
+![shipanfenxi-004][shipanfenxi-004]
 
 **周期分析：**
 
@@ -74,6 +74,7 @@ BTC的ema线21日和50日线，作为牛转熊的分界指标，50日线不跌�
     2021年，如果按照2012年算5.15日就是高点得走了，按照2017年算逃跑点10.20号差不多。
     如果下跌周期形成，高点到低点，差不多持续一年多的时间。
     见下图分析：
+
 ![shipanjilu-001][shipanjilu-001]
 
 
@@ -91,8 +92,8 @@ BTC的ema线21日和50日线，作为牛转熊的分界指标，50日线不跌�
 [600887-003]: https://siweiwo.top/resource/investment/other/600887-003.png
 [600887-004]: https://siweiwo.top/resource/investment/other/600887-004.png
 [shipanjilu-001]: https://siweiwo.top/resource/investment/other/shipanjilu-001.png
-[shipanfeixi-002]: https://siweiwo.top/resource/investment/other/shipanfeixi-002.png
-[shipanfeixi-003]: https://siweiwo.top/resource/investment/other/shipanfeixi-003.png
-[shipanfeixi-004]: https://siweiwo.top/resource/investment/other/shipanfeixi-004.png
+[shipanfenxi-002]: https://siweiwo.top/resource/investment/other/shipanfenxi-002.png
+[shipanfenxi-003]: https://siweiwo.top/resource/investment/other/shipanfenxi-003.png
+[shipanfenxi-004]: https://siweiwo.top/resource/investment/other/shipanfenxi-004.png
 
 
