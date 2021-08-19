@@ -91,7 +91,7 @@ BTC的ema线21日和50日线，作为牛转熊的分界指标，50日线不跌�
 [600887-002]: https://siweiwo.top/resource/investment/other/600887-002.png
 [600887-003]: https://siweiwo.top/resource/investment/other/600887-003.png
 [600887-004]: https://siweiwo.top/resource/investment/other/600887-004.png
-[shipanjilu-001]: https://siweiwo.top/resource/investment/other/shipanjilu-001.png
+[shipanjilu-001]: https://siweiwo.top/resource/investment/other/shipanjilu-001.jpg
 [shipanfenxi-002]: https://siweiwo.top/resource/investment/other/shipanfenxi-002.png
 [shipanfenxi-003]: https://siweiwo.top/resource/investment/other/shipanfenxi-003.png
 [shipanfenxi-004]: https://siweiwo.top/resource/investment/other/shipanfenxi-004.png
