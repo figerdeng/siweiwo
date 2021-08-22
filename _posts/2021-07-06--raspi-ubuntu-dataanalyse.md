@@ -559,18 +559,102 @@ description: 树莓派打造量化平台
           或curl --socks5 user:pwd@127.0.0.1:1080 http://google.com/ 
   ```     
 
+
+
 #### **6.14 shadowsocks 服务**    
     [自己搭建翻墙服务器 ](https://jiyiren.github.io/2016/10/06/fanqiang/)
     vim /etc/ssh/sshd_config
 #### **6.15 linux 远程端口22修改** 
     [Linux 修改远程默认端口](https://blog.csdn.net/little_skeleton/article/details/81075065)
+
     
+#### **6.16 树莓派4b+64位ubuntu mongodb**
+  ```命令行说明
+  参考：
+  Raspberry Pi 筆記(69)：安裝mongoDB資料庫與mongo-express網頁管理工具
+  https://atceiling.blogspot.com/2020/03/raspberry-pi-69mongodbmongo-express.html
+
+  1.如果以前安装了的，先卸载干净
+  $ sudo service mongod stop#停掉服务
+  $ sudo apt-get purge mongodb mongodb-clients mongodb-server mongodb-dev
+  $ sudo apt-get purge mongodb-org*
+  $ sudo apt-get autoremove
+  #删除数据库和日志文件
+  $ sudo rm -r /var/log/mongodb
+  $ sudo rm -r /var/lib/mongodb
+  sudo vim /etc/mongodb.conf
+
+  2.安装
+  如果安装不上，可以先升级系统，如果系统需要翻墙，
+  临时使用export http_proxy=http://xx.xxx.xxx.xxxx:8888，
+  进行代理访问外网
+  $ sudo apt-get update && sudo apt-get upgrade
+  安裝MongoDB
+  $ sudo apt-get install mongodb-server
+  安裝完成後，可以執行以下指令進入 mongoDB 的指令模式：
+  $ mongo如要查看 mongoDB 的狀態，可執行：
+  $ sudo service mongodb status
+
+  服务命令：
+  $ sudo service mongodb start
+  $ sudo service mongodb stop
+  $ sudo service mongodb restart
+  exit：退出mongo
+
+  3.用户认证访问：
+  设置用户访问
+  sudo vim /etc/mongodb.conf修改配置
+  bind_ip = 0.0.0.0#
+  auth = true
+
+  
+  进入命令行：
+  mongo
+  #创建用户密码:
+  use admin
+  db.createUser(
+    {
+      user: "figerdeng",
+      pwd: "Test123456",
+      roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+    }
+  )
+
+  重启服务
+  sudo service mongodb restart
+
+  注意事项：
+  a.为了安全性，在防火墙设置ip访问限制即可+账户验证，则可保证安全。
+  b.查看进程:ps -ef | grep mongo或 pgrep mongo -l或则通过htop
+  c.find / -name "mongodb" 查询目录
+
+  4.客户端链接工具：
+  NoSQLBooster for MongoDB
+  ```
+
+#### **6.17 ubuntu设置http代理服务器**
+  ```命令行说明
+  局部代理：命令行内有效
+      export http_proxy=http://yourproxyaddress:proxyport
+
+  全局代理：
+      gedit ~/.bashrc
+      http_proxy=http://yourproxyaddress:proxyport
+      export http_proxy
+      source ~/.bashrc#生效
+  ```
+
+
+
+
 #### **ubuntu-002开启jupyter服务**
     1.su ubuntu
     2.screen -S jupyterscreen
     3.jupyter notebook
     4.快捷键ctrl + a + d
     5.访问http://192.168.xxx.xxx:9999/tree
+
+
 
 #### **开启小米球服务-发布https服务，通过小米球映射到外网***
     1.screen运行小米球，httpstun7889对应的7889端口，需要防火墙打开
