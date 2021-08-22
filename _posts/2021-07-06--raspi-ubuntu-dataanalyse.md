@@ -614,8 +614,8 @@ description: 树莓派打造量化平台
   use admin
   db.createUser(
     {
-      user: "figerdeng",
-      pwd: "Test123456",
+      user: "username",
+      pwd: "pwd",
       roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
     }
   )
