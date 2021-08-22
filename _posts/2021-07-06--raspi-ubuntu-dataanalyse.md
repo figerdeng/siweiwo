@@ -624,12 +624,69 @@ description: 树莓派打造量化平台
   sudo service mongodb restart
 
   注意事项：
-  a.为了安全性，在防火墙设置ip访问限制即可+账户验证，则可保证安全。
-  b.查看进程:ps -ef | grep mongo或 pgrep mongo -l或则通过htop
-  c.find / -name "mongodb" 查询目录
+  a.用户密码验证时
+      启用认证:root@ubuntu:/usr/bin#./mongod --auth
+      运用3T客户端给用户加上角色:
+          "roles" : [
+        {
+            "role" : "enableSharding", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "dbOwner", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "restore", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "clusterManager", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "dbAdminAnyDatabase", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "clusterAdmin", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "dbAdmin", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "readWriteAnyDatabase", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "userAdminAnyDatabase", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "hostManager", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "userAdmin", 
+            "db" : "admin"
+        }, 
+        {
+            "role" : "root", 
+            "db" : "admin"
+        }
+    ]
+  b.为了安全性，在防火墙设置ip访问限制即可+账户验证，则可保证安全。
+  c.查看进程:ps -ef | grep mongo或 pgrep mongo -l或则通过htop
+  d.find / -name "mongodb" 查询目录
 
   4.客户端链接工具：
   NoSQLBooster for MongoDB
+  https://www.jianshu.com/p/ebd0caa3f1ec
+
+  [studio 3T 两种破解教程](https://www.jianshu.com/p/7257f15e2620?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes)
+  https://robomongo.org/
   ```
 
 #### **6.17 ubuntu设置http代理服务器**
