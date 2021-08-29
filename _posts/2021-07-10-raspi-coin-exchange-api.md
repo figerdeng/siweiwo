@@ -42,6 +42,10 @@ description: 币圈交易所API
       https://www.mexc.com
       https://www.mexc.la
 
+## **4. 火币**
+    1.api帮助以及签名
+      [Python DEMO签名地址](https://github.com/hbdmapi/huobi_api_rules)
+      [Python DEMO签名地址-参考页面](https://open.huobigroup.com/details/413.html)
 
 [url1]: https://www.binancezh.sh/api/v3/klines?symbol=1INCHUSDT&startTime=1625500800000&endTime=1625846399000&limit=1000&interval=1d
 [url2]: https://api3.binance.com/api/v3/klines?symbol=1INCHUSDT&startTime=1625500800000&endTime=1625846399000&limit=1000&interval=1d
