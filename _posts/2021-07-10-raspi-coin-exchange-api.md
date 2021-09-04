@@ -39,8 +39,15 @@ description: 币圈交易所API
 ## **3. 抹茶**
     交易所API URL
     1.常用网址
-      https://www.mexc.com
-      https://www.mexc.la
+        MEXC官方网址：
+        https://www.mexc.com（国外）
+        https://www.mexc.am（国内）
+        MEXC移动端网址：
+        https://m.mexc.com
+        https://m.mexc.am
+        iOS 和安卓App下载：
+        https://m.mexc.com/mobileApp/download
+        https://m.mexc.io/mobileApp/download
 
 ## **4. 火币**
     1.api帮助以及签名
