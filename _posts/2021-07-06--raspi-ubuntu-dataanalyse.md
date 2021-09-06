@@ -320,6 +320,8 @@ description: 树莓派打造量化平台
 
 #### **6.6 ubunutu 防火墙开启和端口开放**
       解决机器无端重启，宝塔端口被墙以后无法正常登录,还有mysql对应的端口进行重新开放，可以通过宝塔面板进行处理。（宝塔和mysql只要机器重启，则端口映射需要重新处理一下）      
+      禁止：sudo ufw disable 
+      开启：sudo ufw enable
       查看防火墙状态：sudo ufw status
       重启ufw防火墙：sudo ufw reload 
       开放端口：sudo ufw allow 1111/tcp或sudo ufw allow 1111/udp
