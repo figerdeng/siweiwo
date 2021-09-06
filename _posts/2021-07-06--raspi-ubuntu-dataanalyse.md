@@ -703,7 +703,15 @@ description: 树莓派打造量化平台
       source ~/.bashrc#生效
   ```
 
+#### **6.18 树莓派 Ubuntu无端重启可能原因**
 
+  ```命令行说明
+    查看日志：
+    cd /var/log
+    find / -name '*.log' | xargs grep 'reboot'
+    1.linux redis WARNING overcommit_memory is set to 0! 解决方案
+      解决办法：编辑/etc/sysctl.conf ，改vm.overcommit_memory=1，然后sysctl -p 使配置文件生效
+  ```
 
 
 #### **ubuntu-002开启jupyter服务**
