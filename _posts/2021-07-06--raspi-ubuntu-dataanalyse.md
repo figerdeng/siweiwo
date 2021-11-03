@@ -444,19 +444,19 @@ description: 树莓派打造量化平台
                   https://blog.csdn.net/xuehaiwuya_1/article/details/53926013
                   https://www.cnblogs.com/linjiqin/p/11720673.html
                   https://blog.csdn.net/mouday/article/details/81981843
-                a.编辑时间（表示59分钟刷新一下服务：a11和a12为一方案，a2为参考方案不做主流配置）
-                  a11:通过.sh执行命令
-                     a11.新建tinyproxy.sh
+                a.编辑时间（表示59分钟刷新一下服务：a1主要方案，a2为参考方案不做主流配置）
+                  a1:通过.sh执行命令（https://www.cnblogs.com/syq816/p/8295184.html）
+                      a11.新建tinyproxy.sh，并给予权限chmod 777 tinyproxy.sh
                         #！/bin/sh
                         /etc/init.d/tinyproxy restart                       
 
-                  a12:直接文件编辑命令
-                    crontab -e命令编辑文件
-                      SHELL=/bin/bash
-                      PATH=/sbin:/bin:/usr/sbin:/usr/bin
-                      MAILTO=root
-                      HOME=/
-                      */59 *  * * * bash /root/tinyproxy.sh
+                      a12:直接文件编辑命令
+                        crontab -e命令编辑文件
+                          SHELL=/bin/bash
+                          PATH=/sbin:/bin:/usr/sbin:/usr/bin
+                          MAILTO=root
+                          HOME=/
+                          */59 *  * * * bash /root/tinyproxy.sh
                   
                   a2：其他方案备注
                     */1 * * * * bash /root/tinyproxy.sh或
