@@ -844,6 +844,9 @@ description: 树莓派打造量化平台
             curl --socks5 xxxx.xx.xxx:1080 http://www.cip.cc/
             curl --socks5 xxxx.xx.xxx:1080 http://httpbin.org/get
             curl --socks5 xxxx.xx.xxx:1080 http://myip.ipip.net
+      4.其他
+      因为自己再部署191机器时候部署v2rayClient（https://github.com/NoOne-hub/v2ray_client）没有部署成功，所以有残余进程
+      开机后supervisorctl stop v2rayClient停止进程。
   ```
 
 
