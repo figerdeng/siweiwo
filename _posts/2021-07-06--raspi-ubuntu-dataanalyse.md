@@ -808,7 +808,46 @@ description: 树莓派打造量化平台
         b.直接指定下载路径
         wget -P /root/download https://launchpad.net/~canonical-chromium-builds/+archive/ubuntu/stage/+files/chromium-browser_90.0.4430.93-0ubuntu0.16.04.1_arm64.deb
 
-  
+## **dock+树莓派ubuntu+vpn(v2ray)部署**
+  ```命令行说明
+      主要参考网址: https://github.com/twotreesus/V2ray.FunPi
+      0.通过宝塔安装Dock管理器3.7，然后点击设置
+          a.镜像管理-获取镜像-点击公共库，然后复制如下镜像，然后等待一会等镜像拉取完成
+          raydoom/v2ray-funpi:latest
+      1.创建容器，并选好刚才的v2ray-funpi镜像，然后配置对那个的服务器和容器的端口映射（此镜像只提供了socks的访问服务），内存分配1900m
+        1080-1080（容器socks服务）
+        1086-1086（容器web访问服务）
+        a.处理镜像端口映射时出现的问题
+            创建失败!500 Server Error: Internal Server Error ("driver failed programming external connectivity on endpoint frosty_nash (8d99a12fdc8e635ac435378ef08d6f1dae8126d5f75b0eab173705ceffed907a): (iptables failed: iptables --wait -t filter -A DOCKER ! -i docker0 -o docker0 -p tcp -d 172.17.0.2 --dport 1086 -j ACCEPT: iptables: No chain/target/match by that name. (exit status 1))")
+            解决方案：参考http://blog.sina.com.cn/s/blog_8e032fb90102xuon.html
+              执行如下命令：
+                pkill docker
+                iptables -t nat -F
+                ifconfig docker0 down
+                brctl delbr docker0
+                docker -d
+                systmctl restart docker或service docker restart重启docker即可
+          b.然后访问http://xxxx.xx.xxx.191/1086就可访问，但需要服务器放行1086和1080端口 
+      2.v2ray配置
+           进入http://xxxx.xx.xxx.191:1086/，默认账号密码admin/admin
+           a.点击页面订阅配置，点击最近订阅的订阅然后输入如下订阅地址，点击ok
+            去自己微信收藏中查询，【vpn订阅地址】标签（即通过https://www.zhixin66.com/aff.php?aff=2476购买的v2rayN.exe对应的服务器代理的订阅地址链接）
+           b.然后获取最新最快的站点，点击打勾按钮应用即可，一般选择日本、新加坡   
+           c.运行状态中，选择代理模式：
+              全局代理:就是所有代理都通过代理服务器上网
+              智能分流：根据网址智能区分走代理还是直接本国链接
+      3.使用dock搭建的sock代理或程序中使用代理
+          curl myip.ipip.net --socks5 xxxx.xx.xxx.191:1080
+          curl google --socks5 xxxx.xxx.xxx.191:1080
+          如检测代理ip：
+            curl myip.ipip.net --socks5 xxxx.xx.xxx:1080
+            curl --socks5 xxxx.xx.xxx:1080 http://www.cip.cc/
+            curl --socks5 xxxx.xx.xxx:1080 http://httpbin.org/get
+            curl --socks5 xxxx.xx.xxx:1080 http://myip.ipip.net
+  ```
+
+
+
 #### **ubuntu-002开启文件同步命令**
 
 #### **ubuntu-002计划任务**
