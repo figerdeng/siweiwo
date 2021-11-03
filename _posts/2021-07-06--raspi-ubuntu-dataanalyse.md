@@ -439,7 +439,38 @@ description: 树莓派打造量化平台
               -A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
               保存退出后重启防火墙
               service iptables restart          
+              4.通过corntab定时刷新任务
+                参考网址：
+                  https://blog.csdn.net/xuehaiwuya_1/article/details/53926013
+                  https://www.cnblogs.com/linjiqin/p/11720673.html
+                  https://blog.csdn.net/mouday/article/details/81981843
+                a.编辑时间（表示59分钟刷新一下服务：a11和a12为一方案，a2为参考方案不做主流配置）
+                  a11:通过.sh执行命令
+                     a11.新建tinyproxy.sh
+                        #！/bin/sh
+                        /etc/init.d/tinyproxy restart                       
 
+                  a12:直接文件编辑命令
+                    crontab -e命令编辑文件
+                      SHELL=/bin/bash
+                      PATH=/sbin:/bin:/usr/sbin:/usr/bin
+                      MAILTO=root
+                      HOME=/
+                      */59 *  * * * bash /root/tinyproxy.sh
+                  
+                  a2：其他方案备注
+                    */1 * * * * bash /root/tinyproxy.sh或
+                    20   16       *             *     *     root     service tinyproxy restart
+                b.常用命令
+                  查看当前用户定时任务
+                    crontab -l 
+                    调用/var/spool/cron/目录下相关用户的定时任务信息
+                  查看定时任务日志
+                    tail -f /var/log/cron
+                  备注：
+                    查找服务路径：https://blog.csdn.net/u013078871/article/details/111058802
+                    tinyproxy服务路径：/usr/sbin/tinyproxy
+                  
         开启路由功能:
           vi /etc/sysctl.conf
           net.ipv4.ip_forward = 0  ，将0改成1
@@ -471,7 +502,7 @@ description: 树莓派打造量化平台
         curl -x xxxxIp:8888 google.com
   ```
 
-#### **6.13 Ubuntu14.04 http代理服务器squid3**
+#### **6.13 Ubuntu14.04 http代理服务器squid3---废掉不建议使用**
   ```命令行说明
     注意提醒：tinyproxy有时候不稳定
     开启服务：
