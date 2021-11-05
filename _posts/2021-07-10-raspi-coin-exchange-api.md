@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 币圈交易所API详细
+title: 币圈必备
 date: 2021-07-10
 categories: blog
-tags: [币圈交易所,API]
-description: 币圈交易所API
+tags: [币圈交易所,API,币圈必备]
+description: 币圈必备
 ---
 
 
-# 币圈交易所API
+# 币圈交易所API详细
 
 ## **1. Binance API**
     交易所API URL
