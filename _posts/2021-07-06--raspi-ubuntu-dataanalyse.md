@@ -880,6 +880,42 @@ description: 树莓派打造量化平台
       开机后supervisorctl stop v2rayClient停止进程。
   ```
 
+## **2012 server 配置asp环境**
+  ```命令行说明
+  2012 server配置iis8--asp环境
+    1.安装数据库引擎
+    64位引擎：AccessDatabaseEngine.exe（siweiwo/resource/tech/computer/software/syssoftware/AccessDatabaseEngine.exe）    
+    https://blog.csdn.net/a237428367/article/details/9272361
+
+    2.将所有Microsoft.Jet.OLEDB.4.0 改成Microsoft.ACE.OLEDB.12.0
+
+    3.配置iis8服务器
+    windows server 2012 IIS8.0配置
+    https://jingyan.baidu.com/article/b24f6c82c504d686bfe5da3d.html
+
+    4.配置asp环境
+    Windows server 2012 IIS 安装asp网站
+    https://blog.csdn.net/weixin_45142980/article/details/105472812
+
+    5.权限配置
+    因为access解压临时文件时候需要用到临时文件夹，如果没有权限则无法正常运行：
+    C:\Users\Administrator\Local Settings\temp
+    C:\Windows\Temp
+    两个目录加入IIS_IUSRS用户权限
+
+    6.防火墙
+    服务器系统内端口开放：
+    控制面板-系统和安全-windows防火墙-高级设置-入站规则
+    新建入站规则，开放对应的端口。
+
+    服务器系统外防火墙端口开放：
+    进入轻量应用服务器---防火墙---添加规则
+    TCP对应的端口开放
+
+    7.访问
+    http://外网ip:端口/personalmgmt/index.asp
+  ```
+
 
 
 #### **ubuntu-002开启文件同步命令**
