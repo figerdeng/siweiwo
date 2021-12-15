@@ -61,8 +61,8 @@
 
 ## 模板作者
 
-figerdeng，博客：思维窝：[siweiwo.top](siweiwo.top)
+思维窝，博客：思维窝：[siweiwo.top](siweiwo.top)
 
-联系方式：dfg1478@gmail.com
+联系方式：xxxxxx@gmail.com
 
 

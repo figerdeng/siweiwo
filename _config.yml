@@ -8,8 +8,8 @@ url: "http://taododo.me"  # 此处填写你的博客地址
 
 # About/contact
 owner: 
-  name: "figerdeng" # 填写作者信息：名字
-  email: dfg1478@gmail.com # 填写作者信息：邮箱
+  name: "思维窝" # 填写作者信息：名字
+  email: xxxxxx@gmail.com # 填写作者信息：邮箱
   bio: "思维窝投资博客,提供最新的投资理念" # 填写作者信息：博客描述
 
 # Data
@@ -20,7 +20,7 @@ douban_username:  # 你的豆瓣id
 twitter_username: 
 github_username: 
 facebook_username: 
-weibo_username: figerdeng
+weibo_username: 思维窝
 zhihu_username: 
 
 # Build settings  
