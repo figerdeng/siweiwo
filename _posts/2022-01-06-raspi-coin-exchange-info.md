@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 币圈交易所
-date: 2021-07-10
+date: 2022-01-06
 categories: blog
 tags: [币圈交易所,API,币圈必备]
 description: 币圈必备
@@ -10,7 +10,7 @@ description: 币圈必备
 
 # 币圈交易所
 
-## 免费梯子必备
+### 免费梯子必备
   ```命令行说明
    免费翻墙地址：
             a.下载软件v2rayN客户端:
@@ -29,7 +29,7 @@ description: 币圈必备
                   点击【服务器->从剪切板导入批量URL】
               b2.点击【服务器列表】，Ctrl+a全选，然后Ctrl+p,查看测试结果，找到一个网速延迟少的，然后设置位活动服务器
   ```  
-## 抹茶交易所
+### 抹茶交易所
   ```命令行说明
     抹茶新账户注册教程：
         1.打开Outlook邮箱：https://outlook.live.com/ 进行注册邮箱账号（Outlook不用翻墙相对稳定，用谷歌邮箱也可以）
@@ -39,7 +39,8 @@ description: 币圈必备
         4.注册完成可以用原来app登录，不需要实名不需要绑手机号，绑了谷歌即可，提币日提现额度40btc，可从老账户提币至新注册海外邮箱账户，抹茶互转是不收手续的，只是显示收。
         注册链接，可以节约10%手续费：https://m.mexc.com/auth/signup?inviteCode=1K8jn
   ```
-## ftx交易所
+
+### ftx交易所
   ```命令行说明
       ftx是sol老板爆炸头开的，合规性目前做的最好的，对标币安系
       可以直接提现到美金账户，不用担心黑金
@@ -50,3 +51,4 @@ description: 币圈必备
           https://ftx.cool/#a=41872756
           https://ftx.blue/#a=41872756
           https://ftx.tech/#a=41872756
+  ```
