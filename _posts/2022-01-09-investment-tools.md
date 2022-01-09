@@ -11,6 +11,10 @@ description: 投资工具
 # 投资工具
 
 ### 斐波纳契计算器
+<iframe frameborder="0" scrolling="auto" height="650" width="545" allowtransparency="true" marginwidth="0" marginheight="0" src="https://ssltools.investing.com/fibonacci-calculator/index.php?force_lang=6"></iframe><br />
 
-<iframe frameborder="0" scrolling="auto" height="650" width="545" allowtransparency="true" marginwidth="0" marginheight="0" src="https://ssltools.investing.com/fibonacci-calculator/index.php?force_lang=6"></iframe><br /><div style="width:450"><span style="float:left"><span style="font-size: 11px;color: #333333;text-decoration: none;"></span></span></div>
+### 投资日历工具
+<iframe src="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&category=_employment,_economicActivity,_inflation,_credit,_confidenceIndex,_balance,_Bonds&importance=3&features=datepicker,timezone&countries=37,5&calType=week&timeZone=28&lang=6" width="650" height="467" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><br />
 
+### 货币工具
+<iframe height="375" width="197" src="https://ssltools.investing.com/currency-converter/index.php?from=17&to=12&force_lang=6"></iframe><br />
