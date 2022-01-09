@@ -18,6 +18,3 @@ description: 投资工具
 
 ### 投资日历工具
 <iframe src="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&category=_employment,_economicActivity,_inflation,_credit,_confidenceIndex,_balance,_Bonds&importance=3&features=datepicker,timezone&countries=37,5&calType=week&timeZone=28&lang=6" width="650" height="467" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><br />
-
-### 货币工具
-<iframe height="375" width="197" src="https://ssltools.investing.com/currency-converter/index.php?from=17&to=12&force_lang=6"></iframe><br />
