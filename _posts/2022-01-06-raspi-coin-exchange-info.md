@@ -12,7 +12,7 @@ description: 币圈必备
 
 ### 免费梯子必备
   ```命令行说明
-   免费翻墙地址：
+   免费梯子地址：
             a.下载软件v2rayN客户端:
              https://z.v3ss.vip/CN2/
 
