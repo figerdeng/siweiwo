@@ -6,6 +6,10 @@ categories: blog
 tags: [币圈,股市,技术分析]
 description: 技术分析
 ---
+# 0. 常用概念 #
+**0.1 股票常用概念**
+     
+  ![前复权，不复权和后复权区别][前复权，不复权和后复权区别]
 
 # 1. 币圈常用指标说明 #
 
@@ -417,5 +421,6 @@ description: 技术分析
 [btc-mvrv001]: https://siweiwo.top/resource/investment/other/btc-mvrv001.png
 [减半倒计时]: https://history.btc123.fans/half/
 [比特币减半倒计时]: https://www.yuanxue365.com/btc_10008
+[前复权，不复权和后复权区别]: https://www.zhihu.com/question/31004373
 
 
