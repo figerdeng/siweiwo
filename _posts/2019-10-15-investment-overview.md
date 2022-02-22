@@ -10,8 +10,15 @@ description: 投资大纲，里面包含投资所有的相关资源链接
 #  交易前必看 #
 
 - '必看' 
-
+	
+	* [树莓派打造量化平台][http://siweiwo.top/blog/2021/07/06/raspi-ubuntu-dataanalyse/]
+	* [树莓派ubuntu20应用][http://siweiwo.top/blog/2021/07/06/raspi-ubuntu-articles/]	
 	* [交易前必看][每天必看]
+	* [投资工具][http://siweiwo.top/blog/2022/01/09/investment-tools/]
+	* [实盘记录][http://siweiwo.top/blog/2021/08/17/investment-shipanjilu/]
+	* [技术分析][http://siweiwo.top/blog/2021/08/04/investment-jishufenxi/]
+	* [币圈必备][http://siweiwo.top/blog/2021/07/10/raspi-coin-exchange-api/]
+	* [面试宝典][http://siweiwo.top/blog/2021/07/06/review/]
 
 # 1. 投资顶级之战系列 #
 
@@ -94,7 +101,11 @@ description: 投资大纲，里面包含投资所有的相关资源链接
 **项目案例**
 > * 区块鏈投资指南
 
+**1.4  投资必看**
 
+- 凯利公式
+ 	* [凯利公式的实际运用参考文档][凯利公式的实际运用]
+	* [凯利公式计算应用模版][凯利公式计算模版]	
 
 
 [每天必看]: https://siweiwo.top/resource/investment/touzixinli/jiaoyiqianbikan/每天必看.jpg 
