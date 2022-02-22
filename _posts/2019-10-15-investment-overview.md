@@ -9,7 +9,7 @@ description: 投资大纲，里面包含投资所有的相关资源链接
 
 #  交易前必看 #
 
-- '必看' 
+- 必看 
 	
 	* [树莓派打造量化平台][http://siweiwo.top/blog/2021/07/06/raspi-ubuntu-dataanalyse/]
 	* [树莓派ubuntu20应用][http://siweiwo.top/blog/2021/07/06/raspi-ubuntu-articles/]	
