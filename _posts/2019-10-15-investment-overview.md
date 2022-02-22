@@ -10,7 +10,7 @@ description: 投资大纲，里面包含投资所有的相关资源链接
 #  交易前必看 #
 
 - 必看 
-	* [交易前必看][每天必看]	
+	* [交易前必看][交易前必看]	
 	* [树莓派打造量化平台][树莓派打造量化平台]
 	* [树莓派ubuntu20应用][树莓派ubuntu20应用]	
 	* [投资工具][投资工具]
@@ -107,7 +107,7 @@ description: 投资大纲，里面包含投资所有的相关资源链接
 	* [凯利公式计算应用模版][凯利公式计算模版]	
 
 
-[每天必看]: https://siweiwo.top/resource/investment/touzixinli/jiaoyiqianbikan/每天必看.jpg 
+[交易前必看]: https://siweiwo.top/resource/investment/touzixinli/jiaoyiqianbikan/每天必看.jpg 
 [凯利公式的实际运用]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式的实际运用.pdf
 [凯利公式计算模版]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式计算模版.xlsx
 [excel三指数均线轮动定投例子]:https://siweiwo.top/resource/inverstmentstrategy/junxian/excel三指数均线轮动定投例子.rar
