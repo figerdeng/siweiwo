@@ -10,15 +10,14 @@ description: 投资大纲，里面包含投资所有的相关资源链接
 #  交易前必看 #
 
 - 必看 
-	
-	* [树莓派打造量化平台][http://siweiwo.top/blog/2021/07/06/raspi-ubuntu-dataanalyse/]
-	* [树莓派ubuntu20应用][http://siweiwo.top/blog/2021/07/06/raspi-ubuntu-articles/]	
-	* [交易前必看][每天必看]
-	* [投资工具][http://siweiwo.top/blog/2022/01/09/investment-tools/]
-	* [实盘记录][http://siweiwo.top/blog/2021/08/17/investment-shipanjilu/]
-	* [技术分析][http://siweiwo.top/blog/2021/08/04/investment-jishufenxi/]
-	* [币圈必备][http://siweiwo.top/blog/2021/07/10/raspi-coin-exchange-api/]
-	* [面试宝典][http://siweiwo.top/blog/2021/07/06/review/]
+	* [交易前必看][每天必看]	
+	* [树莓派打造量化平台][树莓派打造量化平台]
+	* [树莓派ubuntu20应用][树莓派ubuntu20应用]	
+	* [投资工具][投资工具]
+	* [实盘记录][实盘记录]
+	* [技术分析][技术分析]
+	* [币圈必备][币圈必备]
+	* [面试宝典][面试宝典]
 
 # 1. 投资顶级之战系列 #
 
@@ -113,6 +112,13 @@ description: 投资大纲，里面包含投资所有的相关资源链接
 [凯利公式计算模版]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式计算模版.xlsx
 [excel三指数均线轮动定投例子]:https://siweiwo.top/resource/inverstmentstrategy/junxian/excel三指数均线轮动定投例子.rar
 [如何用excel回测均线定投收益率]:https://siweiwo.top/resource/inverstmentstrategy/junxian/如何用excel回测均线定投收益率.rar
+[树莓派打造量化平台]:http://siweiwo.top/blog/2021/07/06/raspi-ubuntu-dataanalyse/
+[树莓派ubuntu20应用]:http://siweiwo.top/blog/2021/07/06/raspi-ubuntu-articles/
+[投资工具]:http://siweiwo.top/blog/2022/01/09/investment-tools/
+[实盘记录]:http://siweiwo.top/blog/2021/08/17/investment-shipanjilu/
+[技术分析]:http://siweiwo.top/blog/2021/08/04/investment-jishufenxi/
+[币圈必备]:http://siweiwo.top/blog/2021/07/10/raspi-coin-exchange-api/
+[面试宝典]:http://siweiwo.top/blog/2021/07/06/review/
 [//]: #注释：样式为了解决超链接问题，也可以markdown语法标签使用或则修改clean-blog.css里a:link\a:visited\a:hover对应的标签
 
 

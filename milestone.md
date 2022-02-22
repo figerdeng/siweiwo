@@ -98,7 +98,14 @@ header-img: "img/zhihu.jpg"
 **项目案例**
 > * 区块鏈投资指南
 
- 
+**1.4  投资必看**
+
+- 凯利公式
+ 	* [凯利公式的实际运用参考文档][凯利公式的实际运用]
+	* [凯利公式计算应用模版][凯利公式计算模版]	
+
+
+[每天必看]: https://siweiwo.top/resource/investment/touzixinli/jiaoyiqianbikan/每天必看.jpg  
 [凯利公式的实际运用]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式的实际运用.pdf
 [凯利公式计算模版]: https://siweiwo.top/resource/investmentformual/kaili/凯利公式计算模版.xlsx
 [excel三指数均线轮动定投例子]:https://siweiwo.top/resource/inverstmentstrategy/junxian/excel三指数均线轮动定投例子.rar
