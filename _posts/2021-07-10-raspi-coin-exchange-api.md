@@ -24,6 +24,10 @@ description: 币圈必备
       https://www.binancezh.sh/api/v3/ping(跳转到前面2个)
       https://api.binancezh.co/api/v3/ping（国内不可用）
 
+      其他相关网址：
+      *.bnbzh.net, *.binancezh.io, *.binancezh.be, *.binancezh.sh, 
+      *.binancezh.ch, *.binancezh.cc, *.binancezh.co
+
     3.API文档
       https://binance-docs.github.io/apidocs/spot/cn/#15ec3c9f4c
     4.K线策略地址
