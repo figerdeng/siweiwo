@@ -744,6 +744,13 @@ description: 树莓派打造量化平台
       解决办法：编辑/etc/sysctl.conf ，改vm.overcommit_memory=1，然后sysctl -p 使配置文件生效
   ```
 
+#### **6.19 树莓派 Ubuntu系统压缩备份**
+
+  ```命令行说明
+    树莓派系统的安装、备份与还原 SD卡分区介绍
+    https://www.bilibili.com/video/BV1pK4y1Q7h8/
+  ```
+
 
 #### **ubuntu-002开启jupyter服务**
     1.su ubuntu
