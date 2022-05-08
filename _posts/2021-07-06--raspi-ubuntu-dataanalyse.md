@@ -771,7 +771,18 @@ description: 树莓派打造量化平台
     2.运行/product/usb3hdd1_3t/dev/digitalcurrency-dataanalyse/prechart0.5/app.py的flask服务
     https://dataanalyse.guyubao.com/pork
 
-    3.ubuntu screen 实用命令
+    3.小米球升级使用
+    su ubuntu
+    screen -ls//查看是否有对应的dataanalyse窗口
+    screen -r name或者id
+    cd /home/ubuntu/dev/linux_arm_new
+    入小米球后台获取https://manager.xiaomiqiu.com/login获得小米球token,并配置本低服务地址和端口
+    执行命令：./xiaomiqiu start-all
+    ctrl + a + d
+    注意：对接的公众号，需要设置ip白名单
+
+
+    4.ubuntu screen 实用命令
         常用的几个命令：
         screen -S name 启动一个名字为name的screen
         screen -S name -X quit 删除某个session
