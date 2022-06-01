@@ -8,7 +8,7 @@ header-img: "img/zhihu.jpg"
 #  交易前必看 #
 
 - 必看 
-	* [人生顿悟]][人生顿悟]
+	* [人生顿悟][人生顿悟]
 	* [交易前必看][每天必看]	
 	* [树莓派打造量化平台][树莓派打造量化平台]
 	* [树莓派ubuntu20应用][树莓派ubuntu20应用]	
@@ -119,7 +119,7 @@ header-img: "img/zhihu.jpg"
 [币圈必备]:http://siweiwo.top/blog/2021/07/10/raspi-coin-exchange-api/
 [面试宝典]:http://siweiwo.top/blog/2021/07/06/review/
 [面试宝典]:http://siweiwo.top/blog/2021/07/06/review/
-[人生顿悟]:http://siweiwo.top/blog/2021/07/06/review/
+[人生顿悟]:http://siweiwo.top/blog/2022/06/01/renshengdunwu/
 [//]: #注释：样式为了解决超链接问题，也可以markdown语法标签使用或则修改clean-blog.css里a:link\a:visited\a:hover对应的标签
 
 
