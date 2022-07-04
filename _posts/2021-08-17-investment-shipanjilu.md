@@ -60,6 +60,12 @@ BTC的ema线21日和50日线，作为牛转熊的分界指标，50日线不跌�
 
 ![shipanfenxi-004][shipanfenxi-004]
 
+    ```2022-07-04
+
+      当主升浪起来反转的判断、，当周k21与K50形成死叉时候，就是做空时机了。
+    ```
+    ![shipanfenxi-005][shipanfenxi-005]
+
 **周期分析：**
 
 [比特币公牛老外周期分析视频：牛熊周期分析](https://www.youtube.com/watch?v=DfQfYTcx6hQ&list=PLwDgXWGx8yomhmN8_N7UT_9uDIe4ZpPaV&index=3&t=48s)
@@ -109,5 +115,5 @@ BTC的ema线21日和50日线，作为牛转熊的分界指标，50日线不跌�
 [shipanfenxi-002]: https://siweiwo.top/resource/investment/other/shipanfenxi-002.png
 [shipanfenxi-003]: https://siweiwo.top/resource/investment/other/shipanfenxi-003.png
 [shipanfenxi-004]: https://siweiwo.top/resource/investment/other/shipanfenxi-004.png
-
+[shipanfenxi-005]: https://siweiwo.top/resource/investment/other/shipanfenxi-005.png
 
