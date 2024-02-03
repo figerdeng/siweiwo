@@ -291,8 +291,10 @@ description: 人生顿悟
       解释为菩萨教人念念于道的真言
       只有正确读诵大悲咒，并用心去理解每句咒语的意思，那么自己才能有更大的收获。虽然大悲咒不是很好理解，但只要大家有信心，有耐心， 那么就能慢慢的深入了解这部咒语。
 ```
- ![大悲咒注解音版][大悲咒注解音版]
-[大悲咒注解音版]: https://siweiwo.top/resource/fo_dao/dabeizhou.jpg
+ ![大悲咒注解音版][1001]
+
+ 
+[1001]: https://siweiwo.top/resource/fo_dao/dabeizhou.jpg
 
 
   
