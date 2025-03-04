@@ -956,6 +956,7 @@ description: 树莓派打造量化平台
 
 #### **ubuntu-002计划任务**
     文件每周备份任务
+
 #### **windows将MT4插件文档上传到gitlab库中**
 ```
 1.安装Git-2.37.3-64-bit.exe和TortoiseGit-2.13.0.1-64bit.msi(Raid1_Computer_BAK\raid1_software\bbk版本库)
