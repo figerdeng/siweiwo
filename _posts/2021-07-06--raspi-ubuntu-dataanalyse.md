@@ -956,6 +956,31 @@ description: 树莓派打造量化平台
 
 #### **ubuntu-002计划任务**
     文件每周备份任务
+#### **windows将MT4插件文档上传到gitlab库中**
+```
+1.安装Git-2.37.3-64-bit.exe和TortoiseGit-2.13.0.1-64bit.msi(Raid1_Computer_BAK\raid1_software\bbk版本库)
+2.到windows指定目录运行git init
+C:\Users\Administrator\AppData\Roaming\MetaQuotes\Terminal\927D9684C35BC593605F4A43AB5F39F1
+  $  git config --global user.name 192windows
+  $  git config --global user.email 192windows@gmail.com
+  $  git init
+3.进入gitlab创建版本库
+  http://xxx.xxx.xx.xxx/root/mt4_exness.git
+4.创建windows目录和gitlab关联
+  $  git remote add origin http://xxx.xxx.xx.xxx/root/mt4_exness.git
+  $  git branch -M main
+ 5.提交文件到远程
+ 通过TortoiseGit-2.13.0.1-64bit管理软件将要更新的文件加入到版本库，然后强制提交到远程仓库即可
+  或git add 文件名&git commit -m "提交"&git push -uf origin main
+(
+其中uf，u代表关联。执行 git push -u origin main 后，Git 会将本地 main 分支与远程 origin/main 分支关联。
+f代表强制：
+组合使用 -uf
+当你运行 git push -uf origin main 时，Git 会：
+强制推送本地 main 分支到远程 origin/main 分支。
+同时将本地 main 分支与远程 origin/main 分支关联，设置为默认的上游分支。
+)
+```
 
 #### **gitee:vs code 代码托管到gitee**
     1.创建仓库
