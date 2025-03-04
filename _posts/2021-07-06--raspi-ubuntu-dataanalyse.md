@@ -70,6 +70,7 @@ description: 树莓派打造量化平台
 
 ## **5. 环境清单**
 #### **5.0配置说明**
+```
       0.策略轮询配置
         [configs.timer]
         day_of_week:0-6----周一到周六
@@ -153,10 +154,10 @@ description: 树莓派打造量化平台
                   [0.924, 0.8749, 0.8258, 0.7767, 0.7276, 0.6785, 0.6294, 0.5803, 0.5312, 0.4821, 0.433]----价格列表
                   getamoutlistvalues:
                   [0.0, 87.15303867403314, 174.30607734806628, 261.4591160220994, 348.61215469613256, 435.7651933701657, 522.9182320441988, 610.071270718232, 697.2243093922651, 784.3773480662983, 871.5303867403314]----仓位数量
-
-
+```
 
 #### **5.1策略使用说明**
+```
       1.策略使用说明:
         策略算法:dc_strategy_grid_F.py
         策略交易模板：dc_product_trade_strategy_grid_F.py
@@ -167,15 +168,20 @@ description: 树莓派打造量化平台
           strategy/grid/dc_product_trade_strategy_template/dc_product_trade_strategy_grid_F.py
           mxc010-btc2l-01-strategy-f-167.py(mxc代表抹茶策略，010代表抹茶策略编号，btc2l代表操作品种，f代表策略类别dc_strategy_grid_F)
           其中策略模板dc_product_trade_strategy_grid_F.py和mxc010-btc2l-01-strategy-f-167.py代码一样，mxc010-btc2l-01-strategy-f-167.py仅仅单个运行实例。
+```
+
 #### **5.2备份数据库shell脚本**
+```
     备份数据库shell脚本，放在定时任务里，每天15：05执行脚本（通过宝塔定时任务“定时备份redis的db0”）：
       /sysmedia/usb3hdd1_120g/dev/stockanalyse/experiment/shellscript/bakredisdb.sh
     备份路径：
       /sysmedia/usb3hdd1_120g/dev/stockanalyse/strategy/grid/db/
     格式如下：
       /sysmedia/usb3hdd1_120g/dev/stockanalyse/strategy/grid/db/db0_20201020.json
+```
 
 #### 配置SSH代码环境
+```
       配置SSH代码环境（以及免密登录）
       1.安装插件Remote-SSH
       2.本地windows生成密钥
@@ -195,6 +201,7 @@ description: 树莓派打造量化平台
         IdentityFile C:\Users\dfg14\.ssh\id_rsa
       6.参考文档：
       https://blog.csdn.net/qq_40183281/article/details/107565280
+```
 
 #### 钉钉提醒提醒个功能
       钉钉提醒提醒个功能：
@@ -207,11 +214,14 @@ description: 树莓派打造量化平台
  
 
 #### **6.1 日志输出**
+```
       日志输出：
       tail -f /media/usb3hdd1_120g/dev/stockanalyse/strategy/grid_product_trade_strategy_grid_A_logout/logs/20201020/202010200827.log 
       tail -f /media/usb3hdd1_120g/dev/stockanalyse/strategy/grid_product_trade_strategy_grid_B_logout/logs/20201020/202010200827.log
- 
+```
+
 #### **6.2 运维**
+```
       日志输出：
       开个新的钉钉群，作为系统运行异常提醒的。
       交易群专门作为交易提醒
@@ -280,8 +290,10 @@ description: 树莓派打造量化平台
       改lcp-echo-interval 300
       icp-echo-failure 40
       写一段代码，读写硬盘15分钟间隔，然后见监控一下
+```
 
 #### **6.3 日志输出等级**
+```
       1、DEBUG
       面向功能开发人员，一般在功能开发阶段使用，用来给开发人员检查功能是否正常的。
       此类日志只在开发阶段使用，版本不输出。
@@ -304,11 +316,13 @@ description: 树莓派打造量化平台
 
       另：
       日志只可记录系统运行状态，不可输出用户敏感数据。
+```
 
 #### **6.4 日志输出等级**
-    获取外网ip：curl www.icanhazip.com
+    获取外网ip：curl www.icanhazip.com或curl myip.ipip.net
 
 #### **6.5 VSCode 快捷键**
+```
       vscode代码编辑器折叠所有区域的代码快捷键
       查看了使用说明，快捷键如下：
       1. 折叠所有区域代码的快捷键：ctrl+k, ctrl+0;
@@ -317,8 +331,10 @@ description: 树莓派打造量化平台
                         先按下ctrl和K，再按下ctrl和J 
       3. 自动格式化代码的快捷键：ctrl+k, ctrl+f;
                         先按下ctrl和K，再按下ctrl和f;
+```
 
 #### **6.6 ubunutu 防火墙开启和端口开放**
+```
       解决机器无端重启，宝塔端口被墙以后无法正常登录,还有mysql对应的端口进行重新开放，可以通过宝塔面板进行处理。（宝塔和mysql只要机器重启，则端口映射需要重新处理一下）      
       禁止：sudo ufw disable 
       开启：sudo ufw enable
@@ -326,14 +342,17 @@ description: 树莓派打造量化平台
       重启ufw防火墙：sudo ufw reload 
       开放端口：sudo ufw allow 1111/tcp或sudo ufw allow 1111/udp
       关闭端口：sudo ufw delete allow 1111/tcp
-
+```
 
 
 #### **6.7 ubunutu 启动命令**
+```
   重启：sudo reboot
   关机：shutdown -h now或halt或poweroff
+```
 
 #### **6.8 flask问题**
+```
   端口被占用，查询7891端口的进程，然后，杀掉
   lsof -i:7891
   kill -9 进程id
@@ -341,8 +360,10 @@ description: 树莓派打造量化平台
   或
   netstat -tunlp
   查看到对应的进程杀掉就可以了
-  
+```
+
 #### **6.9 mysql密码修改**
+```
     1.登入
     mysql -u root -p
     输入root密码
@@ -355,6 +376,7 @@ description: 树莓派打造量化平台
     SET PASSWORD FOR root=PASSWORD('Test1xxxxx');
     update mysql.user set authentication_string=password('Test1xxxxx') where user='root' ;
     4.重启mysql
+```
 
 #### **6.10 文本检索**
   ```命令行说明
@@ -984,6 +1006,7 @@ f代表强制：
 ```
 
 #### **gitee:vs code 代码托管到gitee**
+```
     1.创建仓库
       https://gitee.com/codegalary/digitalcurrencyanalyse
     2.创建用户和公钥
@@ -1034,7 +1057,10 @@ f代表强制：
     find . -name ".git" | xargs rm -Rf
     //初始化仓库
     git init
+```
+
 #### **ubuntu压缩和解压**
+```
     1.压缩当前目前下的【全能行证券交易终端】目录下的所有文件---》全能行证券交易终端.tar.gz
       tar -zcvf 全能行证券交易终端.tar.gz 全能行证券交易终端
     2.解压
@@ -1050,7 +1076,10 @@ f代表强制：
           tar解密解压：
               dd if=filename.tar.gz | openssl des3 -d -k password | tar xzvf - -C解压路径
           password为密码自行设定，出现如下错误，一般是需要通过-C来指定解压路径：
+```
+
 #### **ubuntu7z的压缩和解压**
+```
     1.7z的解压缩
     2.ubuntu下安装7z
     3.7z压缩和解压
@@ -1064,11 +1093,16 @@ f代表强制：
       cd /product/usb3hdd1_3t/computerbak/surface_import/2
       7z a -t7z zhanghu.7z -pTestxxxxx zhanghu.txt
       7z x zhanghu.7z -pTestxxxxx
+```
 
 #### **文件对应关系**
+```
 scp -r /media/usb3hdd1_120g/dev/ root@192.168.10.191:/product/usb3hdd1_3t/dev/
 scp -r /media/usb3hdd1_120g/computerbak/ root@192.168.10.191:/product/usb3hdd1_3t/
+```
+
 #### **Ubuntu ssh服务器copy**
+```
     1.两台linux服务器之间免密scp，在A机器上向B远程拷贝文件
       操作步骤：
       1、在A机器上，执行ssh-keygen -t rsa，一路按Enter，不需要输入任何内容。（如有提示是否覆盖，可输入y后按回车）
@@ -1082,8 +1116,10 @@ scp -r /media/usb3hdd1_120g/computerbak/ root@192.168.10.191:/product/usb3hdd1_3
       scp -r /media/usb3hdd1_120g/dev/ root@192.168.10.191:/product/usb3hdd1_3t/
       Copy 文件
       scp /media/usb3hdd1_120g/dev/file root@192.168.10.191:/product/usb3hdd1_3t/dev/
+```
 
 #### **机器部署规划**
+```
     0：机器说明
       ubuntu_001：树莓派ubuntu机器策略交易，配置4核+4G+固态500g系统盘+外接120G外置移动硬盘
       ubuntu_002：树莓派ubuntu机器策略分析，配置4核+8G+固态500g系统盘+外接3T外置机械硬盘
@@ -1111,8 +1147,8 @@ scp -r /media/usb3hdd1_120g/computerbak/ root@192.168.10.191:/product/usb3hdd1_3
         定时任务备份代码：
         定时备份数字货币交易策略代码(在宝塔面板的计划任务，创建计划任务，将该命令加入进来)：
         scp -r /sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse root@192.168.10.191:/media/usb3hdd1_3t/ubuntu_001_bak/usb3hdd1_120g/dev/
-    2.ubuntu_002
+    3.ubuntu_002
         product目录为固态硬盘目录，主要运行策略程序，因为代码大部分可以服用，故ubuntu_002的代码复制了一套到ubuntu_001
         /product/usb3hdd1_3t/dev/digitalcurrencyanalyse为20210609的一个版本，里面会有有些案例代码experiment
         对应的压缩代码在ubuntu_001的/sysmedia/usb3hdd1_120g/dev/digitalcurrencyanalyse/experiment是一样的
-
+```
